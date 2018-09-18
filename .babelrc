@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["inline-import", { "extensions": [".css"] }],
+    ["import", { "libraryName": "bootstrap" }]
+  ],
+  "presets": ["next/babel"],
+  "ignore": []
+}
