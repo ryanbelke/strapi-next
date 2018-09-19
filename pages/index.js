@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from 'reactstrap'
 import { Alert } from 'reactstrap'
 import Layout from '../components/Layout'
+
 export default class extends React.Component {
   render() {
     return(

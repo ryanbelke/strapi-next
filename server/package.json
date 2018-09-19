@@ -19,9 +19,9 @@
     "eslint-plugin-react": "^6.8.0"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "4.x.x",
     "strapi": "3.0.0-alpha.14.1.1",
-    "strapi-hook-mongoose": "^3.0.0-alpha.14.1.1"
+    "strapi-hook-mongoose": "3.0.0-alpha.14.1.1"
   },
   "author": {
     "name": "ryan",
@@ -36,8 +36,8 @@
     }
   ],
   "strapi": {
-    "packageManager": "yarn",
-    "uuid": "333128bc-3fbb-405c-be47-44ed288d13be"
+    "packageManager": "npm",
+    "uuid": "0a31874a-3f47-48ac-9215-ef4e930127bc"
   },
   "engines": {
     "node": ">= 9.0.0",
