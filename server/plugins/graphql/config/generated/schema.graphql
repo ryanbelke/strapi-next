@@ -8,9 +8,12 @@ The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://
 """
 scalar JSON
 
-union Morph = UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileGroupBy | UploadFileConnection_id | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UploadFileConnectionName | UploadFileConnectionHash | UploadFileConnectionSha256 | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionProvider | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionResetPasswordToken | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole
+union Morph = Restaurant | RestaurantConnection | RestaurantAggregator | RestaurantGroupBy | RestaurantConnection_id | RestaurantConnectionCreatedAt | RestaurantConnectionUpdatedAt | RestaurantConnectionName | RestaurantConnectionDescription | RestaurantConnectionImage | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileGroupBy | UploadFileConnection_id | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UploadFileConnectionName | UploadFileConnectionHash | UploadFileConnectionSha256 | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionProvider | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionResetPasswordToken | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole
 
 type Query {
+  restaurant(id: ID!): Restaurant
+  restaurants(sort: String, limit: Int, start: Int, where: JSON): [Restaurant]
+  restaurantsConnection(sort: String, limit: Int, start: Int, where: JSON): RestaurantConnection
   files(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
   filesConnection(sort: String, limit: Int, start: Int, where: JSON): UploadFileConnection
   role(id: ID!): UsersPermissionsRole
@@ -23,6 +26,64 @@ type Query {
   user(id: ID!): UsersPermissionsUser
   users(sort: String, limit: Int, start: Int, where: JSON): [UsersPermissionsUser]
   usersConnection(sort: String, limit: Int, start: Int, where: JSON): UsersPermissionsUserConnection
+}
+
+type Restaurant {
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String
+  description: String
+  image: UploadFile
+}
+
+type RestaurantAggregator {
+  count: Int
+}
+
+type RestaurantConnection {
+  values: [Restaurant]
+  groupBy: RestaurantGroupBy
+  aggregate: RestaurantAggregator
+}
+
+type RestaurantConnection_id {
+  key: ID
+  connection: RestaurantConnection
+}
+
+type RestaurantConnectionCreatedAt {
+  key: DateTime
+  connection: RestaurantConnection
+}
+
+type RestaurantConnectionDescription {
+  key: String
+  connection: RestaurantConnection
+}
+
+type RestaurantConnectionImage {
+  key: ID
+  connection: RestaurantConnection
+}
+
+type RestaurantConnectionName {
+  key: String
+  connection: RestaurantConnection
+}
+
+type RestaurantConnectionUpdatedAt {
+  key: DateTime
+  connection: RestaurantConnection
+}
+
+type RestaurantGroupBy {
+  _id: [RestaurantConnection_id]
+  createdAt: [RestaurantConnectionCreatedAt]
+  updatedAt: [RestaurantConnectionUpdatedAt]
+  name: [RestaurantConnectionName]
+  description: [RestaurantConnectionDescription]
+  image: [RestaurantConnectionImage]
 }
 
 type UploadFile {

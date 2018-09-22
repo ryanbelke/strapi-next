@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import { Nav, NavItem } from 'reactstrap';
+import { Nav, NavItem, Container } from 'reactstrap';
 
 import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -10,14 +10,14 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <style>{stylesheet}</style>
+      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
     </Head>
     <header>
       <style jsx>{`
         a { color: white; }
        }`}
       </style>
-      <Nav className="navbar navbar-dark bg-primary">
+      <Nav className="navbar navbar-dark bg-dark">
         <NavItem>
           <Link href='/'>
             <a className="navbar-brand">Home</a>
@@ -36,7 +36,9 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
       </Nav>
     </header>
 
-    { children }
+    <Container>
+      { children }
+    </Container>
 
     <footer className="footer">
       {'Strapi footer'}

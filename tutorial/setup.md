@@ -1,6 +1,8 @@
 # Creating a Deliveroo clone using Next.js (React), Strapi, GraphQL and Stripe
 --------
 * [Next.js](https://nextjs.org)   &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; [github.com/zeit/next.js/](https://github.com/zeit/next.js/ )
+
+https://nextjs.org/learn/basics/using-shared-components
 * [Strapi.io](https://strapi.io) &nbsp; &nbsp; &nbsp; [github.com/strapi/strapi](https://github.com/strapi/strapi)
 * [ReactJS](https://reacjs.org) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://github.com/facebook/react
 * [GraphQL](https://graphql.org/) &nbsp; &nbsp;&nbsp; [github.com/graphql](https://github.com/graphql)
@@ -157,7 +159,7 @@ export default class MyApp extends App {
     return (
       <>
       <Head>
-        <style>{stylesheet}</style>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }/>
       </Head>
 
         <Container>
@@ -171,19 +173,18 @@ export default class MyApp extends App {
 
 Now if we add in some reactstrap components inside of index.js we should see the bootstrap styling applied.
 ```javascript
-import React from 'react'
-import { Button } from 'reactstrap'
-import { Alert } from 'reactstrap'
+import { Button, Alert } from 'reactstrap'
+import Layout from '../components/Layout'
 
-export default class extends React.Component {
-  render() {
-    return(
+export default () => {
+  return (
+    <Layout>
       <div>
         <Alert color="primary">Hello Project is strapi-next with Bootstrap</Alert>
-        <Button color="primary">Hello from nextjs</Button>
+        &nbsp; <Button color="primary">Hello from nextjs</Button>
       </div>
-    )
-  }
+    </Layout>
+  )
 }
 ```
 *screenshot of page*
@@ -198,6 +199,7 @@ mkdir component
 cd components
 touch layout.js
 ```
+Nextjs uses the import Link component to perform the client side routing between pages. Link is just a HOC and can accept any html tag that can handle an onClick handler (<a>,<button>,<div> etc.)
 Open the layout.js file and move in the bootstrap CSS import and create a shared header/navbar and footer:
 ```javascript
 import Link from 'next/link'
@@ -212,7 +214,8 @@ export default ({ children, title = 'Welcome to Nextjs' }) => (
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <style>{stylesheet}</style>
+      <style dangerouslySetInnerHTML={{ __html: stylesheet }/>
+
     </Head>
     <header>
       <style jsx>{`
@@ -269,22 +272,18 @@ touch /pages/signup.js
 Populate the files with the following code that we will come back to once our Strapi authentication/server is setup.
 ```javascript
 /* /pages/index.js */
-import React from 'react'
-import { Button } from 'reactstrap'
-import { Alert } from 'reactstrap'
+import { Button, Alert } from 'reactstrap'
 import Layout from '../components/Layout'
 
-export default class extends React.Component {
-  render() {
-    return(
-      <Layout>
-        <div>
-          <Alert color="primary">Hello Project is strapi-next with Bootstrap</Alert>
-          &nbsp; <Button color="primary">Hello from nextjs</Button>
-        </div>
-      </Layout>
-    )
-  }
+export default () => {
+  return (
+    <Layout>
+      <div>
+        <Alert color="primary">Hello Project is strapi-next with Bootstrap</Alert>
+        &nbsp; <Button color="primary">Hello from nextjs</Button>
+      </div>
+    </Layout>
+  )
 }
 
 ```
@@ -324,6 +323,7 @@ Strapi needs Node => 9.0.0 and MongoDB running for install
 Locate your MongoDB install directory and run the `mongod` command
 
 `strapi new server`
+
 *screenshot*
 ```
 cd server
