@@ -5,13 +5,7 @@ import { Button, Card, CardBody, CardColumns, CardImg,CardSubtitle,CardText,
 				 CardTitle, Col, Row } from 'reactstrap';
 
 const RestaurantList = ({
-	data: {
-		loading,
-		error,
-		restaurants
-	},
-	search
-}) => {
+	data: { loading, error, restaurants }, search }) => {
 	if(error)
 		return "Error loading restaurants"
 		//if restaurants are returned from the GraphQL query, run the filter query
@@ -25,8 +19,8 @@ const RestaurantList = ({
 			return (<h1>No Restaurants Found</h1>)
 		} else {
 			return (
-				<Row>
-					<Col>
+                <Row>
+				 <Col>
 					<CardColumns className="h-100" >
 					{
 						restaurantSearch.map(res =>
@@ -38,14 +32,15 @@ const RestaurantList = ({
 							</CardBody>
 							<div className="card-footer">
 								<Button color="primary">
-									<Link as={`/dishes/:${res.name}`} href={`/dishes/:${res._id}`}>
+									<Link as={`/dishes/${res.name.replace(/\s+/g, '-').toLowerCase()}`}
+												href={`/dishes?id=${res._id}`}>
 										<a>View</a>
 									</Link>
 								</Button>
 							</div>
 						</Card> )}
 					</CardColumns>
-					</Col>
+				</Col>
 					<style jsx>
 						{`
 							a {
@@ -58,7 +53,7 @@ const RestaurantList = ({
 						`}
 					</style>
 				</Row>
-			)
+            );
 		}
 	}
 }
