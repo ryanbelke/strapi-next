@@ -1,8 +1,7 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import { Nav, NavItem, Container } from 'reactstrap';
-
 import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
+import Head from 'next/head'
+import Link from 'next/link'
+import { Container, Nav, NavItem } from 'reactstrap';
 
 const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
   <div>

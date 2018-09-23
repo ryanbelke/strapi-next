@@ -17,19 +17,17 @@ const RestaurantList = ({
 		//if restaurants are returned from the GraphQL query, run the filter query
 		//and set equal to variable restaurantSearch
 	if(restaurants && restaurants.length) {
-		//restaurantSearch will hold filtered results
-	let restaurantSearch = restaurants.filter(
-			query => query.name.toLowerCase().includes(search))
-			//if no results are found, display message
-		if(restaurantSearch.length == 0) {
-			return (<h1>No Restaurants Found</h1>)
-		} else {
+		//searchQuery
+		const searchQuery = restaurants.filter(
+			query => query.name.toLowerCase().includes(search)
+		)
+		if(searchQuery.length != 0) {
 			return (
 				<Row>
 					<Col>
 					<CardColumns className="h-100" >
 					{
-						restaurantSearch.map(res =>
+						restaurants.map(res =>
 						<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
 							<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
 							<CardBody>
@@ -38,7 +36,7 @@ const RestaurantList = ({
 							</CardBody>
 							<div className="card-footer">
 								<Button color="primary">
-									<Link as={`/dishes/:${res.name}`} href={`/dishes/:${res._id}`}>
+									<Link as={`/dishes/{res.name}`} href={`/dishes?id=${res._id}`}>
 										<a>View</a>
 									</Link>
 								</Button>
@@ -57,10 +55,12 @@ const RestaurantList = ({
 							}
 						`}
 					</style>
-				</Row>
-			)
+				</Row>)
+			} else {
+				return <h1>No Restaurants Found</h1>
+			}
 		}
-	}
+	return <h1>Loading</h1>
 }
 
 const query = gql `

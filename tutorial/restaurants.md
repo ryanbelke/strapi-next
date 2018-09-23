@@ -132,3 +132,5 @@ With this, we should see a list of the Restaurants complete with an Image, Title
 *screenshot*
 
 Now that we have a list of the restaurants, we can implementing the filtering through the search bar. In a real application, it may not be advisable to load all the data and filter but rely on a real search query from the search bar. For the purpose of the tutorial we will just load all the restaurants and run a simple filter query.
+
+To implement a filter ability, we are going to make the index.js file a class based component to access and store the state of the search box and pass it down to the RestaurantList.
