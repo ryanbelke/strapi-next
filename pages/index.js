@@ -1,7 +1,14 @@
 import RestaurantList from '../components/Restaurants/RestaurantList'
 import React from 'react'
-import { Alert, Button, Col, Input, InputGroup,
-	 			 InputGroupAddon, Row } from 'reactstrap'
+import {
+	Alert,
+	Button,
+	Col,
+	Input,
+	InputGroup,
+	InputGroupAddon,
+	Row
+} from 'reactstrap'
 
 class Index extends React.Component {
 	constructor(props) {

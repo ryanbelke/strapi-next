@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Container, Nav, NavItem } from 'reactstrap';
 
 const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
-  <div>
+	<div>
     <Head>
       <title>{ title }</title>
       <meta charSet='utf-8' />
@@ -12,10 +12,6 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
     </Head>
     <header>
-      <style jsx>{`
-        a { color: white; }
-       }`}
-      </style>
       <Nav className="navbar navbar-dark bg-dark">
         <NavItem>
           <Link href='/'>

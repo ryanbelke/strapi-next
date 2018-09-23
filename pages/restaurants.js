@@ -1,31 +1,98 @@
-import gql from 'graphql-tag'
-import { withRouter } from 'next/router'
+import gql from "graphql-tag"
+import { withRouter } from "next/router"
+import { graphql } from "react-apollo"
+import { compose } from "recompose"
+import { Button, Card, CardBody, CardColumns, CardImg, CardSubtitle } from 'reactstrap';
+import { CardText, CardTitle, Col, Row } from 'reactstrap'
 
 class Restaurants extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		const { data: { loading, error, restaurant }, router } = this.props;
 
-  render() {
-    const {router} = this.props
-		//use nextJs withRouter to get the id parameter passed in the URL
-		const { id } = router.query
+		if (error) return "Error Loading Dishes"
 
-    console.log(router)
-    return (
-			<div>
-				{id}
-			</div>
-		)
-  }
+		if (restaurant) {
+			return (
+				<div className="container-fluid">
+					<h1>{restaurant.name}</h1>
+						<CardColumns className="h-100" >
+						{
+							restaurant.dishes.map(res =>
+							<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
+								<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
+								<CardBody>
+									<CardTitle>{res.name}</CardTitle>
+									<CardText>{res.description}</CardText>
+								</CardBody>
+								<div className="card-footer">
+									{//TODO style a link like button
+									}
+								<a className="btn btn-outline-primary blue">
+									+ Add To Cart
+								</a>
+								<style jsx>
+				          {`
+				            a {
+				              color: white;
+				            }
+				            a:link {
+				              text-decoration: none;
+				              color: white;
+				            }
+				            .container-fluid {
+				              margin-bottom: 30px;
+				            }
+				            .btn-outline-primary {
+				              color: #007bff !important;
+				            }
+				            a:hover {
+				              color: white !important;
+				            }
+				          `}
+				        </style>
+								</div>
+							</Card> )}
+						</CardColumns>
+				</div>
+			)
+		}
+		return <h1>Loading</h1>
+	}
 }
-const query = gql `
-{
-  restaurants {
-    _id
-    name
-    description
-    image { url }
-  }
-}
-`
+
+const GET_RESTAURANT_DISHES = gql `
+	query($id: ID!) {
+		restaurant(id: $id) {
+		 _id
+		 name
+		 dishes {
+			 _id
+			 name
+			 description
+			 price
+			 image {
+				 url
+			 }
+		 }
+	 }
+	}
+
+`;
 // The `graphql` wrapper executes a GraphQL query and makes the results
 // available on the `data` prop of the wrapped component (RestaurantList)
-export default withRouter(Restaurants)
+
+export default compose(withRouter,
+	graphql(GET_RESTAURANT_DISHES, {
+		options: (props) => {
+			console.log("props = " + JSON.stringify(props))
+			return {
+				variables: {
+					id: props.router.query.id
+				}
+			}
+		},
+		props: ({ data }) => ({ data })
+	}))(Restaurants)
