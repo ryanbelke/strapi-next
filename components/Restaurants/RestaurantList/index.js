@@ -1,7 +1,8 @@
 import gql from 'graphql-tag'
+import Link from 'next/link'
 import { graphql } from 'react-apollo'
-import { Button, Card, CardBody, CardColumns, CardImg, CardSubtitle, CardText,
-	CardTitle, Col, Row } from 'reactstrap';
+import { Button, Card, CardBody, CardColumns, CardImg,CardSubtitle,CardText,
+				 CardTitle, Col, Row } from 'reactstrap';
 
 const RestaurantList = ({
 	data: {
@@ -11,34 +12,55 @@ const RestaurantList = ({
 	},
 	search
 }) => {
-	if (error)
-		return "Error loading posts"
-	if (restaurants && restaurants.length) {
-		return (
-			<Row>
-				<Col>
+	if(error)
+		return "Error loading restaurants"
+		//if restaurants are returned from the GraphQL query, run the filter query
+		//and set equal to variable restaurantSearch
+	if(restaurants && restaurants.length) {
+		//restaurantSearch will hold filtered results
+	let restaurantSearch = restaurants.filter(
+			query => query.name.toLowerCase().includes(search))
+			//if no results are found, display message
+		if(restaurantSearch.length == 0) {
+			return (<h1>No Restaurants Found</h1>)
+		} else {
+			return (
+				<Row>
+					<Col>
 					<CardColumns className="h-100" >
-						{
-							restaurants.filter(query => query.name.toLowerCase().includes(search)).map(res =>
-								<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
-								<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
-								<CardBody>
-									<CardTitle>{res.name}</CardTitle>
-									<CardText>{res.description}</CardText>
-								</CardBody>
-								<div className="card-footer">
-									<Button color="primary">View</Button>
-								</div>
-							</Card>)
-						}
+					{
+						restaurantSearch.map(res =>
+						<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
+							<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
+							<CardBody>
+								<CardTitle>{res.name}</CardTitle>
+								<CardText>{res.description}</CardText>
+							</CardBody>
+							<div className="card-footer">
+								<Button color="primary">
+									<Link as={`/dishes/:${res.name}`} href={`/dishes/:${res._id}`}>
+										<a>View</a>
+									</Link>
+								</Button>
+							</div>
+						</Card> )}
 					</CardColumns>
-				</Col>
-    	</Row>
-		)
-	} else  {
-		return <h1>No Results Found</h1>
+					</Col>
+					<style jsx>
+						{`
+							a {
+								color: white;
+							}
+							a:link {
+								text-decoration: none;
+								color: white;
+							}
+						`}
+					</style>
+				</Row>
+			)
+		}
 	}
-	return <h1>Loading</h1>
 }
 
 const query = gql `
