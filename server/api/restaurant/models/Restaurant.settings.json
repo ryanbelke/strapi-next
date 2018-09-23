@@ -24,7 +24,7 @@
       "required": false
     },
     "dishes": {
-      "model": "dish",
+      "collection": "dish",
       "via": "restaurant"
     }
   }

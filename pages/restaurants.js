@@ -1,30 +1,3 @@
-*followed instructions to create dishes*
-
-To navigate to the dishes route we can use the Nextjs Link Component and implement it into our card footer button like so:
-
-```javascript
-import Link from 'next/link'
-<div className="card-footer">
-  <Button color="primary">
-    <Link as={`/restaurants/${res.name}`} href={`/restaurants/${res._id}`}>
-      <a>View</a>
-    </Link>
-  </Button>
-</div>
-```
-
-This will route to the /restaurants/:dishId route, but using the Nextjs Link `as` prop, the browser will display the name of the dish to enhance the customer experience (e.g. localhost:3000/restaurants/Fried%20Chicken%20Masters)
-we will make the URl a slug in the form fried-chicken-masters for SEO and readability with `.replace(/\s+/g, '-').toLowerCase()`
-
-```javascript
-<<<<<<< HEAD
-<Link as={`/restaurants/${res.name.replace(/\s+/g, '-').toLowerCase()}`} href={`/restaurants?id=${res._id}`}>
-  <a>View</a>
-</Link>
-```
-
-https://github.com/gvergnaud/nextjs-dynamic-routes
-=======
 import gql from "graphql-tag"
 import { withRouter } from "next/router"
 import { graphql } from "react-apollo"
@@ -55,9 +28,31 @@ class Restaurants extends React.Component {
 									<CardText>{res.description}</CardText>
 								</CardBody>
 								<div className="card-footer">
-									<Button outline color="primary">
-									 +  Add To Cart
-									</Button>
+									{//TODO style a link like button
+									}
+								<a className="btn btn-outline-primary blue">
+									+ Add To Cart
+								</a>
+								<style jsx>
+				          {`
+				            a {
+				              color: white;
+				            }
+				            a:link {
+				              text-decoration: none;
+				              color: white;
+				            }
+				            .container-fluid {
+				              margin-bottom: 30px;
+				            }
+				            .btn-outline-primary {
+				              color: #007bff !important;
+				            }
+				            a:hover {
+				              color: white !important;
+				            }
+				          `}
+				        </style>
 								</div>
 							</Card> )}
 						</CardColumns>
@@ -101,5 +96,3 @@ export default compose(withRouter,
 		},
 		props: ({ data }) => ({ data })
 	}))(Restaurants)
-```
->>>>>>> dynamic-routes

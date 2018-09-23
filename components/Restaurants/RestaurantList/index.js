@@ -1,29 +1,29 @@
 import gql from 'graphql-tag'
 import Link from 'next/link'
 import { graphql } from 'react-apollo'
-import { Button, Card, CardBody, CardColumns, CardImg,CardSubtitle,CardText,
-				 CardTitle, Col, Row } from 'reactstrap';
+import { Button, Card, CardBody, CardColumns, CardImg, CardSubtitle } from 'reactstrap';
+import { CardText, CardTitle, Col, Row } from 'reactstrap'
 
 const RestaurantList = ({
-	data: { loading, error, restaurants }, search }) => {
-	if(error)
+	data: { loading, error, restaurants },
+	search
+}) => {
+	if (error)
 		return "Error loading restaurants"
-		//if restaurants are returned from the GraphQL query, run the filter query
-		//and set equal to variable restaurantSearch
-	if(restaurants && restaurants.length) {
-		//restaurantSearch will hold filtered results
-	let restaurantSearch = restaurants.filter(
-			query => query.name.toLowerCase().includes(search))
-			//if no results are found, display message
-		if(restaurantSearch.length == 0) {
-			return (<h1>No Restaurants Found</h1>)
-		} else {
+	//if restaurants are returned from the GraphQL query, run the filter query
+	//and set equal to variable restaurantSearch
+	if (restaurants && restaurants.length) {
+		//searchQuery
+		const searchQuery = restaurants.filter(
+			query => query.name.toLowerCase().includes(search)
+		)
+		if (searchQuery.length != 0) {
 			return (
-                <Row>
-				 <Col>
+				<div className="container-fluid">
+
 					<CardColumns className="h-100" >
 					{
-						restaurantSearch.map(res =>
+						restaurants.map(res =>
 						<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
 							<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
 							<CardBody>
@@ -31,17 +31,15 @@ const RestaurantList = ({
 								<CardText>{res.description}</CardText>
 							</CardBody>
 							<div className="card-footer">
-								<Button color="primary">
-									<Link as={`/dishes/${res.name.replace(/\s+/g, '-').toLowerCase()}`}
-												href={`/dishes?id=${res._id}`}>
-										<a>View</a>
-									</Link>
-								</Button>
+								<Link as={`/restaurants/${res.name.replace(/\s+/g, '-').toLowerCase()}`}
+								 			href={`/restaurants?id=${res._id}`}>
+									<a className="btn btn-primary">View</a>
+								</Link>
 							</div>
 						</Card> )}
 					</CardColumns>
-				</Col>
-					<style jsx>
+
+					<style jsx global>
 						{`
 							a {
 								color: white;
@@ -50,17 +48,23 @@ const RestaurantList = ({
 								text-decoration: none;
 								color: white;
 							}
+							a:hover {
+								color: white;
+							}
 						`}
 					</style>
-				</Row>
-            );
+				</div>
+			);
+		} else {
+			return <h1>No Restaurants Found</h1>
 		}
 	}
+	return <h1>Loading</h1>
 }
 
 const query = gql `
 {
-  restaurants {
+	restaurants {
     _id
     name
     description
@@ -71,9 +75,7 @@ const query = gql `
 // The `graphql` wrapper executes a GraphQL query and makes the results
 // available on the `data` prop of the wrapped component (RestaurantList)
 export default graphql(query, {
-	props: ({
-		data
-	}) => ({
+	props: ({ data }) => ({
 		data
 	})
 })(RestaurantList)

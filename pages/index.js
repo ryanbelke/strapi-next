@@ -1,9 +1,14 @@
-import Layout from '../components/Layout'
 import RestaurantList from '../components/Restaurants/RestaurantList'
-import withData from '../lib/apollo'
 import React from 'react'
-import { Alert, Button, Col, Input, InputGroup,
-	 			 InputGroupAddon, Row } from 'reactstrap'
+import {
+	Alert,
+	Button,
+	Col,
+	Input,
+	InputGroup,
+	InputGroupAddon,
+	Row
+} from 'reactstrap'
 
 class Index extends React.Component {
 	constructor(props) {
@@ -21,7 +26,7 @@ class Index extends React.Component {
 	render() {
 
 		return (
-			<Layout>
+			<div>
 	      <Row>
 	        <Col>
 	          <div className="search">
@@ -39,9 +44,9 @@ class Index extends React.Component {
 						width: 500px;
 					}`}
 				</style>
-    	</Layout>
+    	</div>
 		)
 	}
 }
 
-export default withData(Index)
+export default Index

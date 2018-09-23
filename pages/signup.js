@@ -1,10 +1,7 @@
-
-import Layout from '../components/Layout'
-
 export default () => {
   return (
-    <Layout>
+    <div>
       <h1>Sign Up</h1>
-    </Layout>
+    </div>
   )
 }
