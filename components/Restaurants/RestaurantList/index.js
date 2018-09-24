@@ -6,12 +6,14 @@ import { CardText, CardTitle, Col, Row } from 'reactstrap'
 
 const RestaurantList = ({
 	data: { loading, error, restaurants },
-	search
-}) => {
+	search,
+
+}, req) => {
 	if (error)
 		return "Error loading restaurants"
 	//if restaurants are returned from the GraphQL query, run the filter query
 	//and set equal to variable restaurantSearch
+
 	if (restaurants && restaurants.length) {
 		//searchQuery
 		const searchQuery = restaurants.filter(
@@ -31,7 +33,7 @@ const RestaurantList = ({
 								<CardText>{res.description}</CardText>
 							</CardBody>
 							<div className="card-footer">
-								<Link as={`/restaurants/${res.name.replace(/\s+/g, '-').toLowerCase()}`}
+								<Link	as={`/restaurants/${res._id}`}
 								 			href={`/restaurants?id=${res._id}`}>
 									<a className="btn btn-primary">View</a>
 								</Link>
@@ -72,6 +74,11 @@ const query = gql `
   }
 }
 `
+RestaurantList.getInitialProps = async ({ req }) => {
+	const res = await fetch('https://api.github.com/repos/zeit/next.js')
+	const json = await res.json()
+	return { stars: json.stargazers_count }
+}
 // The `graphql` wrapper executes a GraphQL query and makes the results
 // available on the `data` prop of the wrapped component (RestaurantList)
 export default graphql(query, {

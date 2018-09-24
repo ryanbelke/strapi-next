@@ -98,40 +98,21 @@ node_modules
 
 Adding Bootstrap:
 For this tutorial, we will use react-strap to implement Bootstrap 4 into our application.
-To do this we will need to enable CSS imports and make some modifications to our next project.
+For the CSS, we will import from a CDN
+
 For this part we will use reactstrap to implement, run:
 ```
 yarn add reactstrap bootstrap
 ```
-**reactstrap** will allow us to import and use React components on the front using the standard import { Button } from 'reactstrap' method and we will need to import our css stylesheet for the styling to give it that bootstrap look.
+**reactstrap** will allow us to import and use React components on the front using the standard import { Button } from 'reactstrap' method and we will need to user our CSS from the CDN
 
-Nextjs does not come with the ability to import CSS files out of the box, however we can implement it simply by making some modifications, additional documentation:
-reference: *https://zeit.co/blog/next5*
-===============
-```
-yarn add @zeit/next-css
-```
-================ Remove
-^^ code is note used
+Css Imported into head
+
 
 import babel-plugin-import and babel-plugin-inline-import and create a .babelrc file in the project root
 
-```
-yarn add babel-plugin-import babel-plugin-inline-import
-touch .babelrc
-```
-add the following config the .babelrc
-```javascript
-{
-  "plugins": [
-    ["inline-import", { "extensions": [".css"] }],
-    ["import", { "libraryName": "bootstrap" }]
-  ],
-  "presets": ["next/babel"],
-  "ignore": []
-}
-```
-To import the CSS file we will use a custom `_app.js` file inside the pages directory. This file will serve to override the default App.js used by Next inside of every page rendered with Next. This will allow us the ability to import a <Head> component and globally set the stylesheet inside the header in only one place.
+
+To import the CSS and share a Layout component across all our pages we will use a custom `_app.js` file inside the pages directory. This file will serve to override the default App.js used by Next inside of every page rendered with Next. This will allow us the ability to import a <Head> component and globally set the stylesheet inside the header in only one place.
 
 ```
 cd pages
@@ -142,7 +123,6 @@ touch _app.js
 import App, {Container} from 'next/app'
 import Head  from 'next/head'
 import React from 'react'
-import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {
@@ -159,7 +139,8 @@ export default class MyApp extends App {
     return (
       <>
       <Head>
-        <style dangerouslySetInnerHTML={{ __html: stylesheet }/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
       </Head>
 
         <Container>

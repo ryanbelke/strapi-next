@@ -1,5 +1,7 @@
 import Layout from '../components/Layout'
 import withData from '../lib/apollo'
+import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
+
 import App, { Container } from 'next/app'
 import React from 'react'
 

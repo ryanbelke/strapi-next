@@ -1,4 +1,3 @@
-import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Container, Nav, NavItem } from 'reactstrap';
@@ -9,7 +8,7 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     </Head>
     <header>
       <Nav className="navbar navbar-dark bg-dark">
@@ -30,8 +29,8 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
         </NavItem>
       </Nav>
     </header>
-
     <Container>
+
       { children }
     </Container>
 

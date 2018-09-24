@@ -28,8 +28,7 @@ class Restaurants extends React.Component {
 									<CardText>{res.description}</CardText>
 								</CardBody>
 								<div className="card-footer">
-									{//TODO style a link like button
-									}
+
 								<a className="btn btn-outline-primary blue">
 									+ Add To Cart
 								</a>

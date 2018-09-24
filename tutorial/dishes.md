@@ -17,14 +17,11 @@ This will route to the /restaurants/:dishId route, but using the Nextjs Link `as
 we will make the URl a slug in the form fried-chicken-masters for SEO and readability with `.replace(/\s+/g, '-').toLowerCase()`
 
 ```javascript
-<<<<<<< HEAD
 <Link as={`/restaurants/${res.name.replace(/\s+/g, '-').toLowerCase()}`} href={`/restaurants?id=${res._id}`}>
   <a>View</a>
 </Link>
 ```
-
-https://github.com/gvergnaud/nextjs-dynamic-routes
-=======
+```javascript
 import gql from "graphql-tag"
 import { withRouter } from "next/router"
 import { graphql } from "react-apollo"
@@ -102,4 +99,46 @@ export default compose(withRouter,
 		props: ({ data }) => ({ data })
 	}))(Restaurants)
 ```
->>>>>>> dynamic-routes
+ Now if you navigate to the dishes page, the client side navigates but if you refresh on the new URL you will get a 404 page not found. This is caused by the NextJS <Link> component navigates on the client side and since Nextjs is rendered on the server and the client there is no route for this file on the server.
+
+ We will create that now using express
+
+ ```yarn add express ```
+
+create a file called `server.js` in your root folder
+
+```javascript
+const express = require('express')
+const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production'
+const app = next({ dev })
+const handle = app.getRequestHandler()
+
+app.prepare()
+.then(() => {
+  const server = express()
+
+  server.get('*', (req, res) => {
+    return handle(req, res)
+  })
+
+  server.listen(3000, (err) => {
+    if (err) throw err
+    console.log('> Ready on http://localhost:3000')
+  })
+})
+.catch((ex) => {
+  console.error(ex.stack)
+  process.exit(1)
+})
+```
+
+Edit your packages.json file and change the build scripts:
+```
+"scripts": {
+  "dev": "node server.js",
+  "build": "next build",
+  "start": "NODE_ENV=production node server.js"
+},
+```
