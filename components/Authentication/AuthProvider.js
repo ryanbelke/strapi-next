@@ -6,13 +6,17 @@ const AuthContext = React.createContext()
 /* Then create a provider Component */
 class AuthProvider extends React.Component {
   state = {
-    user: 'ryan',
-    count: 20,
+    user: null,
   }
 
   login = (user) => {
     this.setState({
       user: user
+    })
+  }
+  logout = () => {
+    this.setState({
+      user: null,
     })
   }
 

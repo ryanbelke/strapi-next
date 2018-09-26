@@ -19,7 +19,7 @@ const Layout = ({ children, context, title = 'Welcome to Nextjs' }) => (
 						</NavItem>
 						{ context.user ?
 						<NavItem>
-							<a>Logout</a>
+							<a href="/" onClick={context.logout}>Logout</a>
 						</NavItem> :
 						<>
 							<NavItem className="ml-auto">

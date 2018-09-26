@@ -1,6 +1,6 @@
 import React from 'react'
 import Strapi from 'strapi-sdk-javascript/build/main'
-import {AuthConsumer} from '../components/Authentication/AuthProvider'
+import { AuthConsumer} from '../components/Authentication/AuthProvider'
 import { withContext } from '../components/Authentication/AuthProvider'
 import Router from 'next/router'
 import {
