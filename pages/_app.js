@@ -22,13 +22,11 @@ class MyApp extends App {
 		return (
 			<>
 			<Container>
-				<Layout>
 				<AuthProvider>
-
+					<Layout>
 						<Component {...pageProps} />
-
+					</Layout>
 				</AuthProvider>
-				</Layout>
 			</Container>
 			<style jsx global>
 				{`

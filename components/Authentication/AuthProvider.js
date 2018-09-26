@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 /* First we will make a new context */
 const AuthContext = React.createContext()
 
 /* Then create a provider Component */
-class AuthProvider extends Component {
+class AuthProvider extends React.Component {
   state = {
-    user: '',
-    state: 40,
+    user: 'ryan',
+    count: 20,
   }
 
-  login = (props) => {
+  login = (user) => {
     this.setState({
-      user: props.user
+      user: user
     })
   }
 
@@ -28,7 +28,7 @@ class AuthProvider extends Component {
         value={{
           count: this.state.count,
           login: this.login,
-          user: this.user,
+          user: this.state.user,
           decrease: this.decrease,
         }}
       >
@@ -38,8 +38,20 @@ class AuthProvider extends Component {
   }
 }
 
-/* then make a consumer which will surface it */
-const AuthConsumer = AuthContext.Consumer
+/* then make a consumer which will surface it as an HOC */
+// This function takes a component...
+export function withContext(Component) {
+  // ...and returns another component...
+  return function ContextComponent(props) {
+    // ... and renders the wrapped component with the context theme!
+    // Notice that we pass through any additional props as well
+    return (
+      <AuthContext.Consumer>
+        {context => <Component {...props} context={context} />}
+      </AuthContext.Consumer>
+    );
+  };
+}
 
 export default AuthProvider
 export { AuthConsumer }

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { withContext } from '../components/Authentication/AuthProvider'
 import { Container, Nav, NavItem } from 'reactstrap';
-import { AuthConsumer } from '../components/Authentication/AuthProvider'
-const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
+const Layout = ({ children, context, title = 'Welcome to Nextjs' }) => (
 	<div>
     <Head>
       <title>{ title }</title>
@@ -17,23 +17,29 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
 								<a className="navbar-brand">Home</a>
 							</Link>
 						</NavItem>
-						 <NavItem className="ml-auto">
-							 <Link href='/signin'>
-								 <a className="nav-link">Sign In</a>
+						{ context.user ?
+						<NavItem>
+							<a>Logout</a>
+						</NavItem> :
+						<>
+							<NavItem className="ml-auto">
+								<Link href='/signin'>
+									<a className="nav-link">Sign In</a>
+								</Link>
+							</NavItem>
+							<NavItem>
+							 <Link href='/signup'>
+								 <a className="nav-link"> Sign Up</a>
 							 </Link>
 						 </NavItem>
-						<NavItem>
-							<Link href='/signup'>
-								<a className="nav-link"> Sign Up</a>
-							</Link>
-						</NavItem>
+						</>
+			 		}
 					</Nav>
 				</header>
 
 				<Container>
 					{ children }
 				</Container>
-
 
     <footer className="footer">
       {'Strapi footer'}
@@ -51,4 +57,4 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
   </div>
 
 )
-export default Layout
+export default withContext(Layout)
