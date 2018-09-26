@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import withData from '../lib/apollo'
+import AuthProvider from '../components/Authentication/AuthProvider'
 import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
 
 import App, { Container } from 'next/app'
@@ -19,28 +20,35 @@ class MyApp extends App {
 	render() {
 		const { Component, pageProps } = this.props
 		return (
-			<Layout>
-        <Container>
-          <Component {...pageProps} />
-        </Container>
-				<style jsx global>
-					{`
-						a {
-							color: white !important;
-						}
-						a:link {
-							text-decoration: none !important;
-							color: white !important;
-						}
-						a:hover {
-							color: white;
-						}
-						.card {
-						display: flex !important;
-						}
-					`}
-				</style>
-      </Layout>
+			<>
+			<Container>
+				<Layout>
+				<AuthProvider>
+
+						<Component {...pageProps} />
+
+				</AuthProvider>
+				</Layout>
+			</Container>
+			<style jsx global>
+				{`
+					a {
+						color: white !important;
+					}
+					a:link {
+						text-decoration: none !important;
+						color: white !important;
+					}
+					a:hover {
+						color: white;
+					}
+					.card {
+					display: flex !important;
+					}
+				`}
+			</style>
+		</>
+
 		)
 	}
 }

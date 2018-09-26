@@ -1,5 +1,7 @@
 import React from 'react'
 import Strapi from 'strapi-sdk-javascript/build/main'
+import { AuthConsumer } from '../components/Authentication/AuthProvider'
+
 import Router from 'next/router'
 import {
 	Container,
@@ -44,6 +46,9 @@ class SignUp extends React.Component {
 	render () {
 		const { error } = this.state
 		return (
+			<AuthConsumer>
+				{({ user, logout, count }) => (
+					<h1> {user}, count </h1>
 			<Container>
 				<Row>
 					<Col sm="12" md={{ size: 5, offset: 3 }}>
@@ -55,48 +60,52 @@ class SignUp extends React.Component {
 								<div className="notification">
 									{error}
 								</div>
-								<Form>
-									<FormGroup>
-										<Label>Username:</Label>
-										<Input
-											onChange={this.onChange.bind (this, 'username')}
-											type="text"
-											name="username"
-											style={{ height: 50, fontSize: '1.2em' }}
-										/>
-									</FormGroup>
-									<FormGroup>
-										<Label>Email:</Label>
-										<Input
-											onChange={this.onChange.bind (this, 'email')}
-											type="email"
-											name="email"
-											style={{ height: 50, fontSize: '1.2em' }}
-										/>
-									</FormGroup>
-									<FormGroup style={{ marginBottom: 30 }}>
-										<Label>Password:</Label>
-										<Input
-											onChange={this.onChange.bind (this, 'password')}
-											type="password"
-											name="password"
-											style={{ height: 50, fontSize: '1.2em' }}
-										/>
-									</FormGroup>
 
-									<FormGroup >
-										<span>
-											<a href=""><small>Forgot Password?</small></a>
-										</span>
-										<Button
-											style={{ float: 'right', width: 120 }}
-											color="primary"
-											onClick={this.onSubmit.bind(this)}
-										>
-											Submit
-										</Button>
-									</FormGroup>
-								</Form>
+											<h1>Count: {count}</h1>
+										<Form>
+											<FormGroup>
+												<Label>Username:</Label>
+												<Input
+													onChange={this.onChange.bind (this, 'username')}
+													type="text"
+													name="username"
+													style={{ height: 50, fontSize: '1.2em' }}
+												/>
+											</FormGroup>
+											<FormGroup>
+												<Label>Email:</Label>
+												<Input
+													onChange={this.onChange.bind (this, 'email')}
+													type="email"
+													name="email"
+													style={{ height: 50, fontSize: '1.2em' }}
+												/>
+											</FormGroup>
+											<FormGroup style={{ marginBottom: 30 }}>
+												<Label>Password:</Label>
+												<Input
+													onChange={this.onChange.bind (this, 'password')}
+													type="password"
+													name="password"
+													style={{ height: 50, fontSize: '1.2em' }}
+												/>
+											</FormGroup>
+
+											<FormGroup >
+												<span>
+													<a href=""><small>Forgot Password?</small></a>
+												</span>
+												<Button
+													style={{ float: 'right', width: 120 }}
+													color="primary"
+													onClick={this.onSubmit.bind(this)}
+												>
+													Submit
+												</Button>
+											</FormGroup>
+										</Form>
+
+
 							</section>
 						</div>
 					</Col>
@@ -131,6 +140,8 @@ class SignUp extends React.Component {
           `}
 				</style>
 			</Container>
+		)}
+	</AuthConsumer>
 		)
 	}
 }
