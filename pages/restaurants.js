@@ -21,7 +21,7 @@ class Restaurants extends React.Component {
 						<CardColumns className="h-100" >
 						{
 							restaurant.dishes.map(res =>
-							<Card className="h-100" style={{ marginBottom: 0, position: 'relative' }} key={res._id}>
+							<Card key={res._id}>
 								<CardImg top={true} style={{ height:250 }}src={`http://localhost:1337${res.image.url}`}/>
 								<CardBody>
 									<CardTitle>{res.name}</CardTitle>

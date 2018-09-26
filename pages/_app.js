@@ -35,6 +35,9 @@ class MyApp extends App {
 						a:hover {
 							color: white;
 						}
+						.card {
+						display: flex !important;
+						}
 					`}
 				</style>
       </Layout>
