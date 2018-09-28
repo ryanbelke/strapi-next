@@ -4,6 +4,8 @@ import { graphql } from "react-apollo"
 import { compose } from "recompose"
 import { Button, Card, CardBody, CardColumns, CardImg, CardSubtitle } from 'reactstrap';
 import { CardText, CardTitle, Col, Row } from 'reactstrap'
+import Cart from '../components/Cart/cart'
+import withAuth from '../lib/withAuth'
 
 class Restaurants extends React.Component {
 	constructor(props) {
@@ -55,6 +57,9 @@ class Restaurants extends React.Component {
 								</div>
 							</Card> )}
 						</CardColumns>
+						<div>
+							<Cart />
+						</div>
 				</div>
 			)
 		}
@@ -83,7 +88,7 @@ const GET_RESTAURANT_DISHES = gql `
 // The `graphql` wrapper executes a GraphQL query and makes the results
 // available on the `data` prop of the wrapped component (RestaurantList)
 
-export default compose(withRouter,
+export default compose(withRouter, withAuth,
 	graphql(GET_RESTAURANT_DISHES, {
 		options: (props) => {
 			console.log("props = " + JSON.stringify(props))

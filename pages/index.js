@@ -9,6 +9,7 @@ import {
 	InputGroupAddon,
 	Row
 } from 'reactstrap'
+import defaultPage from '../hocs/defaultPage'
 
 class Index extends React.Component {
 	constructor(props) {
@@ -49,4 +50,4 @@ class Index extends React.Component {
 	}
 }
 
-export default Index
+export default defaultPage(Index)

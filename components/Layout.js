@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { withContext } from '../components/Authentication/AuthProvider'
+import AuthService from '../lib/AuthService'
 import { Container, Nav, NavItem } from 'reactstrap';
-const Layout = ({ children, context, title = 'Welcome to Nextjs' }) => (
+
+const auth = new AuthService('http://localhost:1337')
+
+const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
 	<div>
     <Head>
       <title>{ title }</title>
@@ -17,23 +20,25 @@ const Layout = ({ children, context, title = 'Welcome to Nextjs' }) => (
 								<a className="navbar-brand">Home</a>
 							</Link>
 						</NavItem>
-						{ context.user ?
-						<NavItem>
-							<a href="/" onClick={context.logout}>Logout</a>
-						</NavItem> :
-						<>
-							<NavItem className="ml-auto">
-								<Link href='/signin'>
-									<a className="nav-link">Sign In</a>
+						{ auth.getToken() ?
+							<NavItem>
+								<a onClick={auth.logout} >Logout</a>
+							</NavItem>
+							:
+							 <>
+							 <NavItem className="ml-auto">
+								 <Link href='/signin'>
+									 <a className="nav-link">Sign In</a>
+								 </Link>
+							 </NavItem>
+
+							 <NavItem>
+								<Link href='/signup'>
+									<a className="nav-link"> Sign Up</a>
 								</Link>
 							</NavItem>
-							<NavItem>
-							 <Link href='/signup'>
-								 <a className="nav-link"> Sign Up</a>
-							 </Link>
-						 </NavItem>
-						</>
-			 		}
+							 </>
+						 }
 					</Nav>
 				</header>
 
@@ -57,4 +62,4 @@ const Layout = ({ children, context, title = 'Welcome to Nextjs' }) => (
   </div>
 
 )
-export default withContext(Layout)
+export default Layout

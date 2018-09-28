@@ -1,7 +1,10 @@
 import React from 'react'
-import Strapi from 'strapi-sdk-javascript/build/main'
+
 import { AuthConsumer } from '../components/Authentication/AuthProvider'
 import { withContext } from '../components/Authentication/AuthProvider'
+import { register } from '../lib/auth'
+import AuthService from '../lib/AuthService'
+
 import Router from 'next/router'
 import {
 	Container,
@@ -15,6 +18,8 @@ import {
 	FormText,
 } from 'reactstrap'
 
+const auth = new AuthService('http://localhost:1337')
+
 class SignIn extends React.Component {
 	constructor (props) {
 		super (props)
@@ -27,6 +32,12 @@ class SignIn extends React.Component {
 			error: '',
 		}
 	}
+	componentDidMount() {
+		if (auth.loggedIn()) {
+			console.log("logged in")   // redirect if you're already logged in
+		}
+	}
+
 	onChange (propertyName, event) {
 		const {data} = this.state
 		data[propertyName] = event.target.value
@@ -35,16 +46,11 @@ class SignIn extends React.Component {
 	onSubmit () {
 		const {data: {email, username, password}} = this.state
 		const { context } = this.props
-		const apiUrl = process.env.API_URL || 'http://localhost:1337'
-		const strapi = new Strapi (apiUrl)
+
 		this.setState ({ loading: true })
 
-		strapi
-			.login (email, password)
-			//.then(res => this.setState ({ loading: false }))
-			.then(res => context.login(res))
-			.then(res => Router.push('/'))
-			.catch(err => this.setState ({error: err.message}))
+		auth.login(email, password)
+		.then(() => Router.push('/'))
 	}
 	render () {
 		const {error} = this.state
