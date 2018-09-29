@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import AuthService from '../lib/AuthService'
+import { unsetToken } from '../lib/AuthService'
 import { Container, Nav, NavItem } from 'reactstrap';
+import defaultPage from '../hocs/defaultPage'
 
-const auth = new AuthService('http://localhost:1337')
-
-const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
+const Layout = ({ isAuthenticated, children, title = 'Welcome to Nextjs' }) => (
 	<div>
     <Head>
       <title>{ title }</title>
@@ -20,9 +19,9 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
 								<a className="navbar-brand">Home</a>
 							</Link>
 						</NavItem>
-						{ auth.getToken() ?
+						{ isAuthenticated ?
 							<NavItem>
-								<a onClick={auth.logout} >Logout</a>
+								<a onClick={unsetToken()}>Logout</a>
 							</NavItem>
 							:
 							 <>
@@ -62,4 +61,4 @@ const Layout = ({ children, title = 'Welcome to Nextjs' }) => (
   </div>
 
 )
-export default Layout
+export default defaultPage(Layout)

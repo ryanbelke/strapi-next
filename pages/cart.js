@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import withAuth from '../lib/withAuth'
+import defaultPage from '../hocs/defaultPage'
 
 class Cart extends Component {
   constructor(props) {
@@ -11,10 +11,10 @@ class Cart extends Component {
 
   render() {
 
-    const user = this.props.auth.getProfile()
+    const user = this.props.user
     return (
-        <div>Current user: {user.email}</div>
+        <div>Current user: {user}</div>
     )
   }
 }
-export default withAuth(Cart)
+export default defaultPage(Cart)

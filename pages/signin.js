@@ -2,8 +2,8 @@ import React from 'react'
 
 import { AuthConsumer } from '../components/Authentication/AuthProvider'
 import { withContext } from '../components/Authentication/AuthProvider'
-import { register } from '../lib/auth'
-import AuthService from '../lib/AuthService'
+
+import { login } from '../lib/AuthService'
 
 import Router from 'next/router'
 import {
@@ -17,8 +17,7 @@ import {
 	Input,
 	FormText,
 } from 'reactstrap'
-
-const auth = new AuthService('http://localhost:1337')
+import defaultPage from '../hocs/defaultPage'
 
 class SignIn extends React.Component {
 	constructor (props) {
@@ -33,8 +32,8 @@ class SignIn extends React.Component {
 		}
 	}
 	componentDidMount() {
-		if (auth.loggedIn()) {
-			console.log("logged in")   // redirect if you're already logged in
+		if (this.props.isAuthenticated) {
+			Router.push('/')   // redirect if you're already logged in
 		}
 	}
 
@@ -44,12 +43,12 @@ class SignIn extends React.Component {
 		this.setState ({data})
 	}
 	onSubmit () {
-		const {data: {email, username, password}} = this.state
+		const { data: {email, username, password}} = this.state
 		const { context } = this.props
 
 		this.setState ({ loading: true })
 
-		auth.login(email, password)
+		login(email, password)
 		.then(() => Router.push('/'))
 	}
 	render () {
@@ -136,4 +135,4 @@ class SignIn extends React.Component {
 		)
 	}
 }
-export default withContext(SignIn)
+export default SignIn

@@ -1,8 +1,8 @@
 import Layout from '../components/Layout'
 import withData from '../lib/apollo'
 import AuthProvider from '../components/Authentication/AuthProvider'
-import stylesheet from 'bootstrap/dist/css/bootstrap.min.css'
-
+import defaultPage from '../hocs/defaultPage'
+import { compose } from "recompose"
 import App, { Container } from 'next/app'
 import React from 'react'
 
@@ -13,7 +13,6 @@ class MyApp extends App {
 		if (Component.getInitialProps) {
 			pageProps = await Component.getInitialProps(ctx)
 		}
-
 		return { pageProps }
 	}
 
@@ -23,7 +22,7 @@ class MyApp extends App {
 			<>
 			<Container>
 				<AuthProvider>
-					<Layout>
+					<Layout {...this.props}>
 						<Component {...pageProps} />
 					</Layout>
 				</AuthProvider>
@@ -50,4 +49,4 @@ class MyApp extends App {
 		)
 	}
 }
-export default withData(MyApp)
+export default compose(withData, defaultPage)(MyApp)

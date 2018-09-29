@@ -7,13 +7,13 @@ import { getUserFromServerCookie, getUserFromLocalCookie } from '../lib/AuthServ
 
 
 export default Page => class DefaultPage extends React.Component {
-  static getInitialProps (ctx) {
-    const loggedUser = process.browser ? getUserFromLocalCookie() : getUserFromServerCookie(ctx.req)
-    const pageProps = Page.getInitialProps && Page.getInitialProps(ctx)
+  static getInitialProps (req) {
+    const loggedUser = process.browser ? getUserFromLocalCookie() : getUserFromServerCookie(req)
+    const pageProps = Page.getInitialProps && Page.getInitialProps(req)
     return {
       ...pageProps,
       loggedUser,
-      currentUrl: ctx.pathname,
+      currentUrl: req.pathname,
       isAuthenticated: !!loggedUser
     }
   }
@@ -34,9 +34,7 @@ export default Page => class DefaultPage extends React.Component {
 
   render () {
     return (
-      <div>
-        <Page {...this.props} />
-      </div>
+      <Page {...this.props} />
     )
   }
 }
