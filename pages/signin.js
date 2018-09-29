@@ -2,7 +2,7 @@ import React from 'react'
 
 import { AuthConsumer } from '../components/Authentication/AuthProvider'
 import { withContext } from '../components/Authentication/AuthProvider'
-
+import Cookie from 'js-cookie'
 import { login } from '../lib/AuthService'
 
 import Router from 'next/router'
@@ -49,7 +49,7 @@ class SignIn extends React.Component {
 		this.setState ({ loading: true })
 
 		login(email, password)
-		.then(() => Router.push('/'))
+		.then(() => console.log(Cookie.get('user')))
 	}
 	render () {
 		const {error} = this.state

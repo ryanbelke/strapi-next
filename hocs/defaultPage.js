@@ -1,19 +1,22 @@
 import React from 'react'
-
-import Head from 'next/head'
 import Router from 'next/router'
 
-import { getUserFromServerCookie, getUserFromLocalCookie } from '../lib/AuthService'
+import { getUserFromServerCookie, getUserFromLocalCookie } from '../utils/auth'
 
 
 export default Page => class DefaultPage extends React.Component {
-  static getInitialProps (req) {
+  static async getInitialProps({req}) {
+    //console.log(ctx)
     const loggedUser = process.browser ? getUserFromLocalCookie() : getUserFromServerCookie(req)
     const pageProps = Page.getInitialProps && Page.getInitialProps(req)
+    console.log("is authenticated")
+    console.log(loggedUser)
+    let path = req ? req.pathname : ''
+     path = ""
     return {
       ...pageProps,
       loggedUser,
-      currentUrl: req.pathname,
+      currentUrl: path,
       isAuthenticated: !!loggedUser
     }
   }
@@ -34,7 +37,7 @@ export default Page => class DefaultPage extends React.Component {
 
   render () {
     return (
-      <Page {...this.props} />
+            <Page {...this.props} />
     )
   }
 }

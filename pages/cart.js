@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import defaultPage from '../hocs/defaultPage'
-
+import Layout from '../components/Layout'
 class Cart extends Component {
   constructor(props) {
     super(props)
@@ -11,9 +11,12 @@ class Cart extends Component {
 
   render() {
 
-    const user = this.props.user
+    const { isAuthenticated } = this.props
     return (
-        <div>Current user: {user}</div>
+      <Layout>
+        <div>Current user: {isAuthenticated ? "Authenticated" : "Not Authenticaed"}</div>
+        
+      </Layout>
     )
   }
 }
