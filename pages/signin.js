@@ -3,7 +3,7 @@ import React from 'react'
 import { AuthConsumer } from '../components/Authentication/AuthProvider'
 import { withContext } from '../components/Authentication/AuthProvider'
 import Cookie from 'js-cookie'
-import { login } from '../lib/AuthService'
+import { strapiLogin } from '../lib/auth'
 
 import Router from 'next/router'
 import {
@@ -48,7 +48,7 @@ class SignIn extends React.Component {
 
 		this.setState ({ loading: true })
 
-		login(email, password)
+		strapiLogin(email, password)
 		.then(() => console.log(Cookie.get('user')))
 	}
 	render () {

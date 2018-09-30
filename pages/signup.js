@@ -1,7 +1,9 @@
 import React from 'react'
 import Strapi from 'strapi-sdk-javascript/build/main'
-import { AuthConsumer} from '../components/Authentication/AuthProvider'
-import { withContext } from '../components/Authentication/AuthProvider'
+import defaultPage from '../hocs/defaultPage'
+
+import { strapiRegister } from '../lib/auth'
+
 import Router from 'next/router'
 import {
 	Container,
@@ -32,20 +34,17 @@ class SignUp extends React.Component {
 		const {data} = this.state
 		data[propertyName] = event.target.value
 		this.setState ({data})
+
 	}
 	onSubmit () {
 		const {data: {email, username, password}} = this.state
 		const { context } = this.props
-		const apiUrl = process.env.API_URL || 'http://localhost:1337'
-		const strapi = new Strapi (apiUrl)
+		console.log("hello")
+console.dir(Object.keys(require('../lib/auth')));
 		this.setState ({ loading: true })
 
-		strapi
-			.register (username, email, password)
-			//.then(res => this.setState ({ loading: false }))
-			.then(res => context.login(res))
-			.then(() => Router.push ('/'))
-			.catch(err => this.setState ({error: err.message}))
+		strapiRegister(username, email, password)
+
 	}
 	render () {
 		const {error} = this.state
@@ -140,4 +139,4 @@ class SignUp extends React.Component {
 		)
 	}
 }
-export default withContext(SignUp)
+export default defaultPage(SignUp)

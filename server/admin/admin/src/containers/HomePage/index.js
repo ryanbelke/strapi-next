@@ -23,7 +23,7 @@ import SupportUsTitle from 'components/SupportUsTitle';
 
 import { selectPlugins } from 'containers/App/selectors';
 
-import auth from 'utils/auth';
+import auth from 'lib/auth';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
 import validateInput from 'utils/inputsValidations';

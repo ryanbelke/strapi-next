@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { unsetToken } from '../utils/auth'
+import { unsetToken } from '../lib/auth'
 import { Container, Nav, NavItem } from 'reactstrap';
 import defaultPage from '../hocs/defaultPage'
 

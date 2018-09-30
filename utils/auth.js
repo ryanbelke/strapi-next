@@ -1,6 +1,7 @@
 import jwtDecode from 'jwt-decode'
 import Cookie from 'js-cookie'
 import Strapi from 'strapi-sdk-javascript/build/main'
+
 const apiUrl = process.env.API_URL || 'http://localhost:1337'
 const strapi = new Strapi (apiUrl)
 import Router from 'next/router'
@@ -20,7 +21,13 @@ export const extractInfoFromHash = () => {
   const {id_token, state} = getQueryParams()
   return {token: id_token, secret: state}
 }
-
+export const strapiRegister = (username, email, password) => {
+  if (!process.browser) {
+    return undefined
+  }
+  strapi.register(username,email,password)
+  .then(res => setToken(res))
+}
 //use strapi to get a JWT and token object, save
 //to approriate cookei for future requests
 export const strapiLogin = (email,password) => {
@@ -30,18 +37,21 @@ export const strapiLogin = (email,password) => {
     // Get a token
    strapi.login(email, password)
     .then(res => {
-      this.setToken(res)
+      setToken(res)
     })
-    return new Promise.resolve()
+    return Promise.resolve()
 }
 
 export const setToken = (token) => {
   if (!process.browser) {
     return
   }
-  Cookie.set('user', jwtDecode(token))
-  Cookie.set('jwt', token)
+  Cookie.set('user', token.user.username)
+  Cookie.set('jwt', token.jwt)
 
+  if(Cookie.get('user')) {
+    Router.push('/')
+  }
 }
 
 export const unsetToken = () => {
@@ -75,7 +85,3 @@ export const getUserFromLocalCookie = () => {
   console.log("get user from local ")
   return Cookie.get('user')
 }
-
-export const setSecret = (secret) => Cookie.set('secret', secret)
-
-export const checkSecret = (secret) => Cookie.get('secret') === secret

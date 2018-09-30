@@ -5,7 +5,7 @@ import { compose } from "recompose"
 import { Button, Card, CardBody, CardColumns, CardImg, CardSubtitle } from 'reactstrap';
 import { CardText, CardTitle, Col, Row } from 'reactstrap'
 import Cart from '../components/Cart/cart'
-import withAuth from '../lib/withAuth'
+import defaultPage from '../hocs/defaultPage'
 
 class Restaurants extends React.Component {
 	constructor(props) {
@@ -88,7 +88,7 @@ const GET_RESTAURANT_DISHES = gql `
 // The `graphql` wrapper executes a GraphQL query and makes the results
 // available on the `data` prop of the wrapped component (RestaurantList)
 
-export default compose(withRouter, withAuth,
+export default compose(withRouter, defaultPage,
 	graphql(GET_RESTAURANT_DISHES, {
 		options: (props) => {
 			console.log("props = " + JSON.stringify(props))

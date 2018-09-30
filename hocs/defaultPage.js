@@ -1,7 +1,7 @@
 import React from 'react'
 import Router from 'next/router'
 
-import { getUserFromServerCookie, getUserFromLocalCookie } from '../utils/auth'
+import { getUserFromServerCookie, getUserFromLocalCookie } from '../lib/auth'
 
 
 export default Page => class DefaultPage extends React.Component {
