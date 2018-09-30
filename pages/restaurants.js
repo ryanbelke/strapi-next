@@ -2,6 +2,7 @@ import gql from "graphql-tag";
 import { withRouter } from "next/router";
 import { graphql } from "react-apollo";
 import { compose } from "recompose";
+import { withContext } from "../components/Context/AppProvider";
 import {
   Button,
   Card,
@@ -14,7 +15,6 @@ import {
   Col,
   Row
 } from "reactstrap";
-import {} from "reactstrap";
 import Cart from "../components/Cart/Cart";
 import defaultPage from "../hocs/defaultPage";
 
@@ -22,12 +22,15 @@ class Restaurants extends React.Component {
   constructor(props) {
     super(props);
   }
+  addItem(item) {
+    this.props.context.addItem(item);
+  }
   render() {
     const {
       data: { loading, error, restaurant },
-      router
+      router,
+      context
     } = this.props;
-
     if (error) return "Error Loading Dishes";
 
     if (restaurant) {
@@ -49,9 +52,16 @@ class Restaurants extends React.Component {
                       <CardText>{res.description}</CardText>
                     </CardBody>
                     <div className="card-footer">
-                      <a className="btn btn-outline-primary blue">
+                      <Button
+                        onClick={this.addItem.bind(this, res)}
+                        outline
+                        color="primary"
+                      >
                         + Add To Cart
-                      </a>
+                      </Button>
+                      {/* <a className="btn btn-outline-primary blue">
+                        + Add To Cart
+                      </a> */}
                       <style jsx>
                         {`
                           a {
@@ -113,9 +123,9 @@ const GET_RESTAURANT_DISHES = gql`
 export default compose(
   withRouter,
   defaultPage,
+  withContext,
   graphql(GET_RESTAURANT_DISHES, {
     options: props => {
-      console.log("props = " + JSON.stringify(props));
       return {
         variables: {
           id: props.router.query.id

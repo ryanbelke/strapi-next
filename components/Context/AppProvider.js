@@ -5,19 +5,22 @@ const AppContext = React.createContext();
 
 /* Then create a provider Component */
 class AppProvider extends React.Component {
-  state = {
-    items: []
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: []
+    };
+  }
   addItem = item => {
-    const { items } = this.state;
-    let itemArray = [];
-    itemArray = itemArray.push(item);
     this.setState({
-      items: itemArray
+      items: this.state.items.concat(item)
     });
   };
-
+  // removeItem = item => {
+  //   const { items } = this.state
+  //   let itemArray = []
+  //   itemArray
+  // }
   render() {
     return (
       <AppContext.Provider

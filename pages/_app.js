@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import withData from "../lib/apollo";
-import { AppProvider } from "../components/Context/AppProvider";
+import AppProvider from "../components/Context/AppProvider";
 import defaultPage from "../hocs/defaultPage";
 import { compose } from "recompose";
 import App, { Container } from "next/app";
