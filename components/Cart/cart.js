@@ -1,17 +1,29 @@
-import React, {Component} from 'react'
+import React from "react";
+import defaultPage from "../../hocs/defaultPage";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  CardTitle
+} from "reactstrap";
 
-export default class Cart extends Component {
+class Cart extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      items: {}
-    }
+      items: []
+    };
   }
-
+  componentDidMount() {}
   render() {
-
     return (
-        <div></div>
-    )
+      <Card style={{ padding: "10px 5px" }} className="cart">
+        <CardTitle>Your Order:</CardTitle>
+        <CardBody>Items</CardBody>
+      </Card>
+    );
   }
 }
+export default defaultPage(Cart);
