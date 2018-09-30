@@ -8,25 +8,66 @@ class AppProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: []
+      items: [],
+      total: null
     };
   }
   addItem = item => {
-    this.setState({
-      items: this.state.items.concat(item)
-    });
+    let { items } = this.state;
+    //check for item already in cart
+    //if not in cart, add item if item is found increase quanity ++
+    const newItem = items.find(i => i._id === item._id);
+
+    if (!newItem) {
+      //set quantity property to 1
+      item.quantity = 1;
+      this.setState({
+        items: this.state.items.concat(item),
+        total: this.state.total + item.price
+      });
+    } else {
+      this.setState({
+        items: this.state.items.map(
+          item =>
+            item._id === newItem._id
+              ? Object.assign({}, item, { quantity: item.quantity + 1 })
+              : item
+        ),
+        total: this.state.total + item.price
+      });
+    }
   };
-  // removeItem = item => {
-  //   const { items } = this.state
-  //   let itemArray = []
-  //   itemArray
-  // }
+  removeItem = item => {
+    let { items } = this.state;
+    //check for item already in cart
+    //if not in cart, add item if item is found increase quanity ++
+    const newItem = items.find(i => i._id === item._id);
+    if (newItem.quantity > 1) {
+      this.setState({
+        items: this.state.items.map(
+          item =>
+            item._id === newItem._id
+              ? Object.assign({}, item, { quantity: item.quantity - 1 })
+              : item
+        ),
+        total: this.state.total - item.price
+      });
+    } else {
+      const items = [...this.state.items];
+      const index = items.findIndex(i => i._id === newItem._id);
+      console.log("index " + index);
+      items.splice(index, 1);
+      this.setState({ items: items });
+    }
+  };
   render() {
     return (
       <AppContext.Provider
         value={{
           items: this.state.items,
-          addItem: this.addItem
+          addItem: this.addItem,
+          removeItem: this.removeItem,
+          total: this.state.total
         }}
       >
         {this.props.children}
