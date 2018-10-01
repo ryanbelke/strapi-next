@@ -22,6 +22,7 @@ class Restaurants extends React.Component {
   constructor(props) {
     super(props);
   }
+
   addItem(item) {
     this.props.context.addItem(item);
   }
@@ -29,7 +30,8 @@ class Restaurants extends React.Component {
     const {
       data: { loading, error, restaurant },
       router,
-      context
+      context,
+      isAuthenticated
     } = this.props;
     if (error) return "Error Loading Dishes";
 
@@ -89,7 +91,7 @@ class Restaurants extends React.Component {
             </Col>
             <Col xs="3">
               <div>
-                <Cart />
+                <Cart isAuthenticated={isAuthenticated} />
               </div>
             </Col>
           </Row>

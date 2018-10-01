@@ -1,5 +1,5 @@
 import React from "react";
-
+import Cookie from "js-cookie";
 /* First we will make a new context */
 const AppContext = React.createContext();
 
@@ -21,20 +21,26 @@ class AppProvider extends React.Component {
     if (!newItem) {
       //set quantity property to 1
       item.quantity = 1;
-      this.setState({
-        items: this.state.items.concat(item),
-        total: this.state.total + item.price
-      });
+      this.setState(
+        {
+          items: this.state.items.concat(item),
+          total: this.state.total + item.price
+        },
+        () => Cookie.set("cart", this.state.items)
+      );
     } else {
-      this.setState({
-        items: this.state.items.map(
-          item =>
-            item._id === newItem._id
-              ? Object.assign({}, item, { quantity: item.quantity + 1 })
-              : item
-        ),
-        total: this.state.total + item.price
-      });
+      this.setState(
+        {
+          items: this.state.items.map(
+            item =>
+              item._id === newItem._id
+                ? Object.assign({}, item, { quantity: item.quantity + 1 })
+                : item
+          ),
+          total: this.state.total + item.price
+        },
+        () => Cookie.set("cart", this.state.items)
+      );
     }
   };
   removeItem = item => {
@@ -43,21 +49,27 @@ class AppProvider extends React.Component {
     //if not in cart, add item if item is found increase quanity ++
     const newItem = items.find(i => i._id === item._id);
     if (newItem.quantity > 1) {
-      this.setState({
-        items: this.state.items.map(
-          item =>
-            item._id === newItem._id
-              ? Object.assign({}, item, { quantity: item.quantity - 1 })
-              : item
-        ),
-        total: this.state.total - item.price
-      });
+      this.setState(
+        {
+          items: this.state.items.map(
+            item =>
+              item._id === newItem._id
+                ? Object.assign({}, item, { quantity: item.quantity - 1 })
+                : item
+          ),
+          total: this.state.total - item.price
+        },
+        () => Cookie.set("cart", this.state.items)
+      );
     } else {
       const items = [...this.state.items];
       const index = items.findIndex(i => i._id === newItem._id);
-      console.log("index " + index);
+
       items.splice(index, 1);
-      this.setState({ items: items });
+      this.setState(
+        { items: items, total: this.state.total - item.price },
+        () => Cookie.set("cart", this.state.items)
+      );
     }
   };
   render() {

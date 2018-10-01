@@ -2,6 +2,7 @@ import React from "react";
 import defaultPage from "../../hocs/defaultPage";
 import { withContext } from "../Context/AppProvider";
 import { compose } from "recompose";
+
 import {
   Button,
   Card,
@@ -27,7 +28,8 @@ class Cart extends React.Component {
 
   render() {
     const { items } = this.props.context;
-
+    const { isAuthenticated } = this.props;
+    console.log(isAuthenticated);
     return (
       <div>
         <Card style={{ padding: "10px 5px" }} className="cart">
@@ -84,12 +86,16 @@ class Cart extends React.Component {
                     }
                   })
                 : null}
-              {items.length > 0 ? (
-                <div>
-                  <h5>Total: ${this.props.context.total}</h5>
-                  <Button color="primary">Order</Button>
-                </div>
-              ) : null}
+              {this.props.isAuthenticated ? (
+                items.length > 0 ? (
+                  <div>
+                    <h5>Total: ${this.props.context.total}</h5>
+                    <Button color="primary">Order</Button>
+                  </div>
+                ) : null
+              ) : (
+                <h5>Login to Order</h5>
+              )}
             </div>
           </CardBody>
         </Card>
@@ -110,6 +116,6 @@ class Cart extends React.Component {
   }
 }
 export default compose(
-  defaultPage,
-  withContext
+  withContext,
+  defaultPage
 )(Cart);

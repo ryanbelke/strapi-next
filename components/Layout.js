@@ -45,7 +45,9 @@ class Layout extends React.Component {
             </NavItem>
             {isAuthenticated ? (
               <NavItem>
-                <a onClick={unsetToken}>Logout</a>
+                <a className="logout" onClick={unsetToken}>
+                  Logout
+                </a>
               </NavItem>
             ) : (
               <>
@@ -69,12 +71,18 @@ class Layout extends React.Component {
           {"Strapi footer"}
           <style jsx>
             {`
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              height: 60px;
-              line-height: 60px;
-              background-color: #f5f5f5;
+              .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #f5f5f5;
+              }
+              a:hover {
+                cursor: pointer;
+                color: yellow;
+              }
             `}
           </style>
         </footer>
