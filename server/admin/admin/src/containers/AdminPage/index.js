@@ -47,7 +47,7 @@ import OverlayBlocker from 'components/OverlayBlocker';
 import PluginPage from 'containers/PluginPage';
 
 // Utils
-import auth from 'lib/auth';
+import auth from 'utils/auth';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
 

@@ -1,8 +1,8 @@
 {
   "_from": "strapi-plugin-email@alpha",
-  "_id": "strapi-plugin-email@3.0.0-alpha.14.1.1",
+  "_id": "strapi-plugin-email@3.0.0-alpha.14.2",
   "_inBundle": false,
-  "_integrity": "sha512-GnEKxp7NetXLABluKLMmAB+btX7XKbMuj9NO+4IaflKNGYpGkCphIYanzqT71H/DYYA7eucGkQsJFM1xSpZxAg==",
+  "_integrity": "sha512-ebMvpR2yxV1GwVRVMHCvbYj+w3VDyYKgB5gM4wxuL5AhW9cSJrfRASHg30pSFiJuOL2OliSZwJatH/Q9qtBx/Q==",
   "_location": "/strapi-plugin-email",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-email/-/strapi-plugin-email-3.0.0-alpha.14.1.1.tgz",
-  "_shasum": "ea33629adada63a858fb55e58caec5ac38e5afd1",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-email/-/strapi-plugin-email-3.0.0-alpha.14.2.tgz",
+  "_shasum": "ed3d5d34065d795f7cb01d209d31664ff3695090",
   "_spec": "strapi-plugin-email@alpha",
   "_where": "/Users/ryan/ReactNode/strapi-next/server",
   "author": {
@@ -32,13 +32,13 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "strapi-email-sendmail": "3.0.0-alpha.14.1.1"
+    "strapi-email-sendmail": "3.0.0-alpha.14.2"
   },
   "deprecated": false,
   "description": "This is the description of the plugin.",
   "devDependencies": {
     "react-copy-to-clipboard": "5.0.1",
-    "strapi-helper-plugin": "3.0.0-alpha.14.1.1"
+    "strapi-helper-plugin": "3.0.0-alpha.14.2"
   },
   "engines": {
     "node": ">= 9.0.0",
@@ -77,7 +77,7 @@
     "icon": "paper-plane",
     "description": "email.plugin.description"
   },
-  "version": "3.0.0-alpha.14.1.1",
+  "version": "3.0.0-alpha.14.2",
   "warnings": [
     {
       "code": "ENOTSUP",
@@ -85,7 +85,7 @@
         "node": ">= 9.0.0",
         "npm": ">= 5.0.0"
       },
-      "pkgid": "strapi-plugin-email@3.0.0-alpha.14.1.1"
+      "pkgid": "strapi-plugin-email@3.0.0-alpha.14.2"
     },
     {
       "code": "ENOTSUP",
@@ -93,7 +93,7 @@
         "node": ">= 9.0.0",
         "npm": ">= 5.0.0"
       },
-      "pkgid": "strapi-plugin-email@3.0.0-alpha.14.1.1"
+      "pkgid": "strapi-plugin-email@3.0.0-alpha.14.2"
     }
   ]
 }

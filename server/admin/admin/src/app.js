@@ -31,7 +31,7 @@ import {
   updatePlugin,
 } from 'containers/App/actions';
 
-import auth from 'lib/auth';
+import auth from 'utils/auth';
 import configureStore from './store';
 import { translationMessages, languages } from './i18n';
 import { findIndex } from 'lodash';

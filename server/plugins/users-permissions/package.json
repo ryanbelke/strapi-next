@@ -1,8 +1,8 @@
 {
   "_from": "strapi-plugin-users-permissions@alpha",
-  "_id": "strapi-plugin-users-permissions@3.0.0-alpha.14.1.1",
+  "_id": "strapi-plugin-users-permissions@3.0.0-alpha.14.2",
   "_inBundle": false,
-  "_integrity": "sha512-kVnS6W6krwYYtktJz9rsrbc17I4DyXvxZMJpVIqzuGg1K2B8243f23TW4yTUd3LxJd2/ekj92DC0yqkJyJg0dA==",
+  "_integrity": "sha512-NrpEYZn/y6pZl46ehhj5AdCJBefueRqz3eyjcF2O+pRtYfTehDLf5wuZZMfFQVdsKy+llWDyLnmGGv/TBUH7yg==",
   "_location": "/strapi-plugin-users-permissions",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.14.1.1.tgz",
-  "_shasum": "d6a7fe075935621aafe7bd8034b71aed57dcfcc9",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.14.2.tgz",
+  "_shasum": "6c027597618b172ac35812b80d9a2148755b96f1",
   "_spec": "strapi-plugin-users-permissions@alpha",
   "_where": "/Users/ryan/ReactNode/strapi-next/server",
   "author": {
@@ -44,7 +44,7 @@
   "deprecated": false,
   "description": "Protect your API with a full-authentication process based on JWT",
   "devDependencies": {
-    "strapi-helper-plugin": "3.0.0-alpha.14.1.1"
+    "strapi-helper-plugin": "3.0.0-alpha.14.2"
   },
   "engines": {
     "node": ">= 9.0.0",
@@ -83,5 +83,23 @@
     "icon": "users",
     "description": "users-permissions.plugin.description"
   },
-  "version": "3.0.0-alpha.14.1.1"
+  "version": "3.0.0-alpha.14.2",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-users-permissions@3.0.0-alpha.14.2"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-users-permissions@3.0.0-alpha.14.2"
+    }
+  ]
 }

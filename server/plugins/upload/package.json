@@ -1,8 +1,8 @@
 {
   "_from": "strapi-plugin-upload@alpha",
-  "_id": "strapi-plugin-upload@3.0.0-alpha.14.1.1",
+  "_id": "strapi-plugin-upload@3.0.0-alpha.14.2",
   "_inBundle": false,
-  "_integrity": "sha512-enApda8L5/1v3bMd6WzT1MHgr9TEbpn1M/q5IjTNaHaqy/Qx8dTZGegBvM/0PehPSn3x8flS32GnfwUQ5s77zg==",
+  "_integrity": "sha512-k5jjAmb1U5pclgkvOVOaB7A98q2PjD4hlCodq3v+Maz1j3OJq7ztr0mdbcOG+kjE7ZxinvjbdT0UrOAjrnPQqQ==",
   "_location": "/strapi-plugin-upload",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.14.1.1.tgz",
-  "_shasum": "9c93537b297b00b915356e3b6f468568e58f2dc4",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.14.2.tgz",
+  "_shasum": "983723ec85c5a0506a82a966d67e44c7028b1177",
   "_spec": "strapi-plugin-upload@alpha",
   "_where": "/Users/ryan/ReactNode/strapi-next/server",
   "author": {
@@ -28,14 +28,14 @@
   "bundleDependencies": false,
   "dependencies": {
     "react-copy-to-clipboard": "^5.0.1",
-    "strapi-upload-local": "3.0.0-alpha.14.1.1",
+    "strapi-upload-local": "3.0.0-alpha.14.2",
     "stream-to-array": "^2.3.0",
     "uuid": "^3.2.1"
   },
   "deprecated": false,
   "description": "This is the description of the plugin.",
   "devDependencies": {
-    "strapi-helper-plugin": "3.0.0-alpha.14.1.1"
+    "strapi-helper-plugin": "3.0.0-alpha.14.2"
   },
   "engines": {
     "node": ">= 7.0.0",
@@ -67,5 +67,5 @@
     "icon": "cloud-upload",
     "description": "Description of upload plugin."
   },
-  "version": "3.0.0-alpha.14.1.1"
+  "version": "3.0.0-alpha.14.2"
 }

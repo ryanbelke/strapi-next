@@ -1,6 +1,6 @@
 import { get, includes, isArray, set, omit } from 'lodash';
 import { call, fork, takeLatest, put, select } from 'redux-saga/effects';
-import auth from 'lib/auth';
+import auth from 'utils/auth';
 import request from 'utils/request';
 
 import { makeSelectFormType, makeSelectModifiedData } from './selectors';

@@ -2,7 +2,7 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 import { get } from 'lodash';
 import { fork, call, put, select, takeLatest, take, cancel } from 'redux-saga/effects';
 import { pluginDeleted } from 'containers/App/actions';
-import auth from 'lib/auth';
+import auth from 'utils/auth';
 import request from 'utils/request';
 
 import { selectLocale } from '../LanguageProvider/selectors';

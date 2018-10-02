@@ -1,8 +1,8 @@
 {
   "_from": "strapi-plugin-settings-manager@alpha",
-  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.14.1.1",
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.14.2",
   "_inBundle": false,
-  "_integrity": "sha512-GP3zK38IgQS+EgHxD8lJZy8jBnH9uWa1DmUq+F7URGdSXJKW86uMjQeWJcrVOjKmOtvr2/dnpKmaZALCuTWbhw==",
+  "_integrity": "sha512-JuqfUTFa3ReCpjmC6ZGzhgxKK6qlZhQlZMnWpmH4xjfMPuEZgPgqZVwFwLiAKzMnWTIT5ijZYQ2Quv2X2Ikyrw==",
   "_location": "/strapi-plugin-settings-manager",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.14.1.1.tgz",
-  "_shasum": "de5b462893ea73139fda323459bb85b79309794f",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.14.2.tgz",
+  "_shasum": "43ea5bef63929cd19eb69e6988b9b18532f1dbdf",
   "_spec": "strapi-plugin-settings-manager@alpha",
   "_where": "/Users/ryan/ReactNode/strapi-next/server",
   "author": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "flag-icon-css": "^2.8.0",
     "react-select": "^1.0.0-rc.5",
-    "strapi-helper-plugin": "3.0.0-alpha.14.1.1"
+    "strapi-helper-plugin": "3.0.0-alpha.14.2"
   },
   "engines": {
     "node": ">= 9.0.0",
@@ -76,5 +76,23 @@
     "icon": "wrench",
     "description": "settings-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.14.1.1"
+  "version": "3.0.0-alpha.14.2",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-settings-manager@3.0.0-alpha.14.2"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-settings-manager@3.0.0-alpha.14.2"
+    }
+  ]
 }

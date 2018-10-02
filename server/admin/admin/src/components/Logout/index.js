@@ -8,7 +8,7 @@ import React from 'react';
 import { get } from 'lodash';
 import PropTypes from 'prop-types';
 import { ButtonDropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
-import auth from 'lib/auth';
+import auth from 'utils/auth';
 
 import styles from './styles.scss';
 

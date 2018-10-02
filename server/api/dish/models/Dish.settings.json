@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "dish",
+  "collectionName": "",
   "info": {
     "name": "dish",
     "description": ""
@@ -13,19 +13,19 @@
       "default": "",
       "type": "string"
     },
+    "price": {
+      "default": "",
+      "type": "float"
+    },
     "description": {
       "default": "",
-      "type": "string"
+      "type": "text"
     },
     "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
-    },
-    "price": {
-      "default": "",
-      "type": "integer"
     },
     "restaurant": {
       "model": "restaurant",

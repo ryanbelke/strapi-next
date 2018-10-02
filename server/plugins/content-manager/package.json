@@ -1,8 +1,8 @@
 {
   "_from": "strapi-plugin-content-manager@alpha",
-  "_id": "strapi-plugin-content-manager@3.0.0-alpha.14.1.1",
+  "_id": "strapi-plugin-content-manager@3.0.0-alpha.14.2",
   "_inBundle": false,
-  "_integrity": "sha512-kYAu9vn94yWEDxsxPx+2RAoBYvj1FaQnLLVMRmNQQgTik3TuGHR3FT0Tc0AW9/oTNcTNG1Nj/wfRgsq8Dq4H3A==",
+  "_integrity": "sha512-8AlJcLx/v0v47XQ4rxORG52w3Ud/CfsBJatTBsjablvZYFvjU0QzHX5jaAoBZRRIcKvugLAcHvBDIYVd5kbDqw==",
   "_location": "/strapi-plugin-content-manager",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.14.1.1.tgz",
-  "_shasum": "3405f36550802c8cdca8f2d80d77a9168f22aab8",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.14.2.tgz",
+  "_shasum": "81505cfacab978442b1f2838206f39f7b20001ff",
   "_spec": "strapi-plugin-content-manager@alpha",
   "_where": "/Users/ryan/ReactNode/strapi-next/server",
   "author": {
@@ -41,7 +41,7 @@
     "draft-js": "^0.10.5",
     "react-select": "^1.2.1",
     "showdown": "^1.8.6",
-    "strapi-helper-plugin": "3.0.0-alpha.14.1.1"
+    "strapi-helper-plugin": "3.0.0-alpha.14.2"
   },
   "engines": {
     "node": ">= 9.0.0",
@@ -80,5 +80,23 @@
     "icon": "plug",
     "description": "content-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.14.1.1"
+  "version": "3.0.0-alpha.14.2",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-content-manager@3.0.0-alpha.14.2"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-content-manager@3.0.0-alpha.14.2"
+    }
+  ]
 }
