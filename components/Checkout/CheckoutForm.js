@@ -33,12 +33,13 @@ class CheckoutForm extends React.Component {
   submitOrder() {
     const { context } = this.props;
     const { data } = this.state;
+    console.log(context);
     this.props.stripe.createToken().then(res => {
       strapi.createEntry(
-        "order",
+        "orders",
         {
-          amount: context.amount,
-          dishes: contex.items,
+          amount: context.total,
+          dishes: context.items,
           address: data.address,
           city: data.city,
           state: data.state
