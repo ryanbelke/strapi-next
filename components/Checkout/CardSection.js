@@ -20,7 +20,9 @@ class CardSection extends React.Component {
                 </div>
                 <br />
                 <div className="order-button-wrapper">
-                  <button>Confirm order</button>
+                  <button onClick={this.props.submitOrder}>
+                    Confirm order
+                  </button>
                 </div>
                 {this.props.stripeError ? (
                   <div>{this.props.stripeError.toString()}</div>
