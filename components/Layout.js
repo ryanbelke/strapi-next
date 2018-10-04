@@ -35,6 +35,7 @@ class Layout extends React.Component {
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous"
           />
+          <script src="https://js.stripe.com/v3" />
         </Head>
         <header>
           <Nav className="navbar navbar-dark bg-dark">
@@ -67,7 +68,7 @@ class Layout extends React.Component {
           </Nav>
         </header>
         <Container>{children}</Container>
-        <footer className="footer">
+        {/* <footer className="footer">
           {"Strapi footer"}
           <style jsx>
             {`
@@ -85,7 +86,7 @@ class Layout extends React.Component {
               }
             `}
           </style>
-        </footer>
+        </footer> */}
       </div>
     );
   }

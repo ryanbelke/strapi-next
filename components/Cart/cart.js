@@ -2,7 +2,8 @@ import React from "react";
 import defaultPage from "../../hocs/defaultPage";
 import { withContext } from "../Context/AppProvider";
 import { compose } from "recompose";
-
+import Link from "next/link";
+import { withRouter } from "next/router";
 import {
   Button,
   Card,
@@ -90,7 +91,13 @@ class Cart extends React.Component {
                 items.length > 0 ? (
                   <div>
                     <h5>Total: ${this.props.context.total}</h5>
-                    <Button color="primary">Order</Button>
+                    {this.props.router.pathname != "/checkout" ? (
+                      <Button color="primary">
+                        <Link href="/checkout">
+                          <a>Order</a>
+                        </Link>
+                      </Button>
+                    ) : null}
                   </div>
                 ) : null
               ) : (
@@ -117,5 +124,6 @@ class Cart extends React.Component {
 }
 export default compose(
   withContext,
-  defaultPage
+  defaultPage,
+  withRouter
 )(Cart);
