@@ -2,9 +2,8 @@ import React from "react";
 import defaultPage from "../../hocs/defaultPage";
 import { withContext } from "../Context/AppProvider";
 import { compose } from "recompose";
-import { withRouter } from "next/router";
 import Link from "next/link";
-
+import { withRouter } from "next/router";
 import {
   Button,
   Card,
@@ -90,16 +89,16 @@ class Cart extends React.Component {
                 : null}
               {this.props.isAuthenticated ? (
                 items.length > 0 ? (
-                  this.props.router.pathname != "/checkout" ? (
-                    <div>
-                      <h5>Total: ${this.props.context.total}</h5>
-                      <Link href="/checkout">
-                        <a>
-                          <Button color="primary">Order</Button>
-                        </a>
-                      </Link>
-                    </div>
-                  ) : null
+                  <div>
+                    <h5>Total: ${this.props.context.total}</h5>
+                    {this.props.router.pathname != "/checkout" ? (
+                      <Button color="primary">
+                        <Link href="/checkout">
+                          <a>Order</a>
+                        </Link>
+                      </Button>
+                    ) : null}
+                  </div>
                 ) : null
               ) : (
                 <h5>Login to Order</h5>
