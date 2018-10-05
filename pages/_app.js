@@ -9,8 +9,6 @@ import React from "react";
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
-    console.log("context ");
-    console.log();
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
@@ -39,7 +37,10 @@ class MyApp extends App {
               color: white;
             }
             .card {
-              display: flex !important;
+              display: inline-block !important;
+            }
+            .card-columns {
+              column-count: 3;
             }
           `}
         </style>

@@ -37,13 +37,16 @@ class Restaurants extends React.Component {
 
     if (restaurant) {
       return (
-        <div className="container-fluid">
+        <>
           <h1>{restaurant.name}</h1>
           <Row>
-            <Col xs="9">
-              <CardColumns className="h-100">
+            <Col xs="9" style={{ padding: 0 }}>
+              <div style={{ display: "inline-block" }} className="h-100">
                 {restaurant.dishes.map(res => (
-                  <Card key={res._id}>
+                  <Card
+                    style={{ width: "30%", margin: "0 10px" }}
+                    key={res._id}
+                  >
                     <CardImg
                       top={true}
                       style={{ height: 250 }}
@@ -61,9 +64,7 @@ class Restaurants extends React.Component {
                       >
                         + Add To Cart
                       </Button>
-                      {/* <a className="btn btn-outline-primary blue">
-                        + Add To Cart
-                      </a> */}
+
                       <style jsx>
                         {`
                           a {
@@ -87,15 +88,15 @@ class Restaurants extends React.Component {
                     </div>
                   </Card>
                 ))}
-              </CardColumns>
+              </div>
             </Col>
-            <Col xs="3">
+            <Col xs="3" style={{ padding: 0 }}>
               <div>
                 <Cart isAuthenticated={isAuthenticated} />
               </div>
             </Col>
           </Row>
-        </div>
+        </>
       );
     }
     return <h1>Loading</h1>;

@@ -56,6 +56,8 @@ class CheckoutForm extends React.Component {
   render() {
     return (
       <div className="paper">
+        <h5>Your information:</h5>
+        <hr />
         <FormGroup style={{ display: "flex" }}>
           <div style={{ flex: "0.90", marginRight: 10 }}>
             <Label>Address</Label>
@@ -86,11 +88,11 @@ class CheckoutForm extends React.Component {
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
                 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-              height: 500px;
+              height: 550px;
               padding: 30px;
               background: #fafafa;
               border-radius: 6px;
-              margin-top: 60px;
+              margin-top: 90px;
             }
             .form-half {
               flex: 0.5;

@@ -48,7 +48,7 @@ class Layout extends React.Component {
             {isAuthenticated ? (
               <>
                 <NavItem className="ml-auto">
-                  <span style={{ color: "white", marginRight: 60 }}>
+                  <span style={{ color: "white", marginRight: 30 }}>
                     {this.props.loggedUser}
                   </span>
                 </NavItem>

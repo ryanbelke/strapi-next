@@ -27,9 +27,13 @@ const RestaurantList = (
     if (searchQuery.length != 0) {
       return (
         <div>
-          <CardColumns className="h-100">
+          <div className="h-100">
             {searchQuery.map(res => (
-              <Card className="h-100" key={res._id}>
+              <Card
+                style={{ width: "30%", margin: "0 10px" }}
+                className="h-100"
+                key={res._id}
+              >
                 <CardImg
                   top={true}
                   style={{ height: 250 }}
@@ -49,7 +53,7 @@ const RestaurantList = (
                 </div>
               </Card>
             ))}
-          </CardColumns>
+          </div>
 
           <style jsx global>
             {`
@@ -62,6 +66,9 @@ const RestaurantList = (
               }
               a:hover {
                 color: white;
+              }
+              .card-columns {
+                column-count: 3;
               }
             `}
           </style>
