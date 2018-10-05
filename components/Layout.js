@@ -4,6 +4,7 @@ import Link from "next/link";
 import { unsetToken } from "../lib/auth";
 import { Container, Nav, NavItem } from "reactstrap";
 import defaultPage from "../hocs/defaultPage";
+import Cookie from "js-cookie";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -45,11 +46,20 @@ class Layout extends React.Component {
               </Link>
             </NavItem>
             {isAuthenticated ? (
-              <NavItem>
-                <a className="logout" onClick={unsetToken}>
-                  Logout
-                </a>
-              </NavItem>
+              <>
+                <NavItem className="ml-auto">
+                  <span style={{ color: "white", marginRight: 60 }}>
+                    {this.props.loggedUser}
+                  </span>
+                </NavItem>
+                <NavItem>
+                  <Link href="/">
+                    <a className="logout" onClick={unsetToken}>
+                      Logout
+                    </a>
+                  </Link>
+                </NavItem>
+              </>
             ) : (
               <>
                 <NavItem className="ml-auto">

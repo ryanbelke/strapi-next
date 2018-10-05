@@ -10,7 +10,8 @@ import {
   CardBody,
   CardSubtitle,
   CardText,
-  CardTitle
+  CardTitle,
+  Badge
 } from "reactstrap";
 import uuidv1 from "uuid/v1";
 
@@ -34,7 +35,8 @@ class Cart extends React.Component {
     return (
       <div>
         <Card style={{ padding: "10px 5px" }} className="cart">
-          <CardTitle>Your Order:</CardTitle>
+          <CardTitle style={{ margin: 10 }}>Your Order:</CardTitle>
+          <hr />
           <CardBody style={{ padding: 10 }}>
             <div style={{ marginBottom: 6 }}>
               <small>Items:</small>
@@ -50,21 +52,20 @@ class Cart extends React.Component {
                           key={uuidv1()}
                         >
                           <div>
-                            <span id="item-quantity">{item.quantity}x</span>
-                            <span id="item-name">&nbsp; {item.name}</span>
                             <span id="item-price">&nbsp; ${item.price}</span>
+                            <span id="item-name">&nbsp; {item.name}</span>
                           </div>
                           <div>
                             <Button
                               style={{
                                 height: 25,
                                 padding: 0,
-                                width: 25,
-                                marginRight: 5
+                                width: 15,
+                                marginRight: 5,
+                                marginLeft: 10
                               }}
                               onClick={this.addItem.bind(this, item)}
-                              outline
-                              color="primary"
+                              color="link"
                             >
                               +
                             </Button>
@@ -72,15 +73,17 @@ class Cart extends React.Component {
                               style={{
                                 height: 25,
                                 padding: 0,
-                                width: 25,
+                                width: 15,
                                 marginRight: 10
                               }}
                               onClick={this.removeItem.bind(this, item)}
-                              outline
-                              color="primary"
+                              color="link"
                             >
                               -
                             </Button>
+                            <span style={{ marginLeft: 5 }} id="item-quantity">
+                              {item.quantity}x
+                            </span>
                           </div>
                         </div>
                       );
@@ -90,13 +93,25 @@ class Cart extends React.Component {
               {this.props.isAuthenticated ? (
                 items.length > 0 ? (
                   <div>
-                    <h5>Total: ${this.props.context.total}</h5>
+                    <Badge style={{ width: 200, padding: 10 }} color="light">
+                      <h5 style={{ fontWeight: 100, color: "gray" }}>
+                        Total:{" "}
+                      </h5>
+                      <h3>${this.props.context.total}</h3>
+                    </Badge>
                     {this.props.router.pathname != "/checkout" ? (
-                      <Button color="primary">
+                      <div
+                        style={{
+                          marginTop: 10,
+                          marginRight: 10
+                        }}
+                      >
                         <Link href="/checkout">
-                          <a>Order</a>
+                          <Button style={{ width: "100%" }} color="primary">
+                            <a>Order</a>
+                          </Button>
                         </Link>
-                      </Button>
+                      </div>
                     ) : null}
                   </div>
                 ) : null
@@ -109,13 +124,16 @@ class Cart extends React.Component {
         <style jsx>{`
           #item-price {
             font-size: 1.3em;
+            color: rgba(97, 97, 97, 1);
           }
-          #item-quantiy {
-            font-size: 0.75em;
+          #item-quantity {
+            font-size: 0.95em;
             padding-bottom: 4px;
+            color: rgba(158, 158, 158, 1);
           }
           #item-name {
             font-size: 1.3em;
+            color: rgba(97, 97, 97, 1);
           }
         `}</style>
       </div>

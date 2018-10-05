@@ -5,6 +5,7 @@ import CardSection from "./CardSection";
 import { FormGroup, Label, Input, FormText, Row, Col } from "reactstrap";
 import { injectStripe } from "react-stripe-elements";
 import Strapi from "strapi-sdk-javascript/build/main";
+import Router from "next/router";
 
 const apiUrl = process.env.API_URL || "http://localhost:1337";
 const strapi = new Strapi(apiUrl);
@@ -35,17 +36,20 @@ class CheckoutForm extends React.Component {
     const { data } = this.state;
     console.log(context);
     this.props.stripe.createToken().then(res => {
-      strapi.createEntry(
-        "orders",
-        {
-          amount: context.total,
-          dishes: context.items,
-          address: data.address,
-          city: data.city,
-          state: data.state
-        },
-        res.token.id
-      );
+      strapi
+        .createEntry(
+          "orders",
+          {
+            amount: context.total,
+            dishes: context.items,
+            address: data.address,
+            city: data.city,
+            state: data.state,
+            stripe_id: data.stripe_id
+          },
+          res.token.id
+        )
+        .then(Router.push("/"));
     });
   }
 
@@ -75,7 +79,7 @@ class CheckoutForm extends React.Component {
           submitOrder={this.submitOrder}
         />
 
-        <style jsx>
+        <style jsx global>
           {`
             .paper {
               border: 1px solid lightgray;
@@ -91,10 +95,6 @@ class CheckoutForm extends React.Component {
             .form-half {
               flex: 0.5;
             }
-          `}
-        </style>
-        <style jsx global>
-          {`
             * {
               box-sizing: border-box;
             }
