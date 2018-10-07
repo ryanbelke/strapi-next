@@ -26,7 +26,7 @@ class Index extends React.Component {
   }
   render() {
     return (
-      <>
+      <div className="container-fluid">
         <Row>
           <Col>
             <div className="search">
@@ -46,7 +46,7 @@ class Index extends React.Component {
             }
           `}
         </style>
-      </>
+      </div>
     );
   }
 }

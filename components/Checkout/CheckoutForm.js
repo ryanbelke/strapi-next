@@ -37,18 +37,15 @@ class CheckoutForm extends React.Component {
     console.log(context);
     this.props.stripe.createToken().then(res => {
       strapi
-        .createEntry(
-          "orders",
-          {
-            amount: context.total,
-            dishes: context.items,
-            address: data.address,
-            city: data.city,
-            state: data.state,
-            stripe_id: data.stripe_id
-          },
-          res.token.id
-        )
+        .createEntry("orders", {
+          amount: context.total,
+          dishes: context.items,
+          address: data.address,
+          city: data.city,
+          state: data.state,
+          stripe_id: data.stripe_id,
+          token: res.token.id
+        })
         .then(Router.push("/"));
     });
   }
