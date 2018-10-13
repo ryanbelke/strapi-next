@@ -1,3 +1,5 @@
+/* components/hocs/defaultPage.js */
+
 import React from "react";
 import Router from "next/router";
 

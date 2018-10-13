@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { unsetToken } from "../lib/auth";
 import { Container, Nav, NavItem } from "reactstrap";
-import defaultPage from "../hocs/defaultPage";
+import defaultPage from "../components/hocs/defaultPage";
 import Cookie from "js-cookie";
 
 class Layout extends React.Component {

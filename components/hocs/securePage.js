@@ -1,3 +1,5 @@
+/* components/hocs/securePage.js */
+
 import React from "react";
 import PropTypes from "prop-types";
 
