@@ -1,0 +1,45 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/_app": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/checkout": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/restaurants": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/signin": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/signup": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ],
+    "/": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "static/runtime/main-f36e5c6d012dfaa8e72b.js"
+    ]
+  }
+}

@@ -1,0 +1,2004 @@
+{
+  "prop-types": [
+    {
+      "id": 0,
+      "name": "./node_modules/prop-types/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "react": [
+    {
+      "id": 1,
+      "name": "./node_modules/react/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    },
+    {
+      "id": 395,
+      "name": "./node_modules/next-apollo/node_modules/react/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "reactstrap": [
+    {
+      "id": 2,
+      "name": "./node_modules/reactstrap/dist/reactstrap.es.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/_core": [
+    {
+      "id": 5,
+      "name": "./node_modules/core-js/library/modules/_core.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "js-cookie": [
+    {
+      "id": 6,
+      "name": "./node_modules/js-cookie/src/js.cookie.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "fbjs/lib/shallowEqual": [
+    {
+      "id": 9,
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "styled-jsx/style": [
+    {
+      "id": 10,
+      "name": "./node_modules/styled-jsx/style.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_export": [
+    {
+      "id": 11,
+      "name": "./node_modules/core-js/library/modules/_export.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "hoist-non-react-statics": [
+    {
+      "id": 12,
+      "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/interopRequireDefault": [
+    {
+      "id": 13,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "next/router": [
+    {
+      "id": 14,
+      "name": "./node_modules/next/router.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "symbol-observable": [
+    {
+      "id": 15,
+      "name": "./node_modules/symbol-observable/es/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_global": [
+    {
+      "id": 16,
+      "name": "./node_modules/core-js/library/modules/_global.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_wks": [
+    {
+      "id": 17,
+      "name": "./node_modules/core-js/library/modules/_wks.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/classCallCheck": [
+    {
+      "id": 18,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/createClass": [
+    {
+      "id": 19,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/createClass.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../hocs/defaultPage": [
+    {
+      "id": 20,
+      "name": "./hocs/defaultPage.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_is-object": [
+    {
+      "id": 21,
+      "name": "./node_modules/core-js/library/modules/_is-object.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-dp": [
+    {
+      "id": 22,
+      "name": "./node_modules/core-js/library/modules/_object-dp.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./utils": [
+    {
+      "id": 23,
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    },
+    {
+      "id": 242,
+      "name": "./node_modules/strapi-sdk-javascript/node_modules/qs/lib/utils.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime/regenerator": [
+    {
+      "id": 25,
+      "name": "./node_modules/@babel/runtime/regenerator/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_an-object": [
+    {
+      "id": 26,
+      "name": "./node_modules/core-js/library/modules/_an-object.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/defineProperty": [
+    {
+      "id": 27,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "next/link": [
+    {
+      "id": 38,
+      "name": "./node_modules/next/link.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "react-lifecycles-compat": [
+    {
+      "id": 39,
+      "name": "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_descriptors": [
+    {
+      "id": 40,
+      "name": "./node_modules/core-js/library/modules/_descriptors.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_ctx": [
+    {
+      "id": 41,
+      "name": "./node_modules/core-js/library/modules/_ctx.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../../../webpack/buildin/global.js": [
+    {
+      "id": 42,
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/possibleConstructorReturn": [
+    {
+      "id": 43,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/getPrototypeOf": [
+    {
+      "id": 44,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/inherits": [
+    {
+      "id": 45,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/inherits.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es6.string.iterator": [
+    {
+      "id": 47,
+      "name": "./node_modules/core-js/library/modules/es6.string.iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/interopRequireWildcard": [
+    {
+      "id": 48,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_fails": [
+    {
+      "id": 49,
+      "name": "./node_modules/core-js/library/modules/_fails.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_hide": [
+    {
+      "id": 50,
+      "name": "./node_modules/core-js/library/modules/_hide.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../lib/utils": [
+    {
+      "id": 51,
+      "name": "./node_modules/next/dist/lib/utils.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../lib/auth": [
+    {
+      "id": 62,
+      "name": "./lib/auth.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-iobject": [
+    {
+      "id": 63,
+      "name": "./node_modules/core-js/library/modules/_to-iobject.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_has": [
+    {
+      "id": 64,
+      "name": "./node_modules/core-js/library/modules/_has.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_a-function": [
+    {
+      "id": 65,
+      "name": "./node_modules/core-js/library/modules/_a-function.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-object": [
+    {
+      "id": 66,
+      "name": "./node_modules/core-js/library/modules/_to-object.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iterators": [
+    {
+      "id": 67,
+      "name": "./node_modules/core-js/library/modules/_iterators.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/web.dom.iterable": [
+    {
+      "id": 68,
+      "name": "./node_modules/core-js/library/modules/web.dom.iterable.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../../node_modules/process/browser.js": [
+    {
+      "id": 69,
+      "name": "./node_modules/process/browser.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": 75,
+      "name": "./node_modules/react-dom/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_property-desc": [
+    {
+      "id": 76,
+      "name": "./node_modules/core-js/library/modules/_property-desc.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/promise": [
+    {
+      "id": 77,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/promise.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/set": [
+    {
+      "id": 78,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/set.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_cof": [
+    {
+      "id": 80,
+      "name": "./node_modules/core-js/library/modules/_cof.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_library": [
+    {
+      "id": 81,
+      "name": "./node_modules/core-js/library/modules/_library.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_set-to-string-tag": [
+    {
+      "id": 82,
+      "name": "./node_modules/core-js/library/modules/_set-to-string-tag.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-keys": [
+    {
+      "id": 83,
+      "name": "./node_modules/core-js/library/modules/_object-keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-length": [
+    {
+      "id": 84,
+      "name": "./node_modules/core-js/library/modules/_to-length.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-create": [
+    {
+      "id": 85,
+      "name": "./node_modules/core-js/library/modules/_object-create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_classof": [
+    {
+      "id": 86,
+      "name": "./node_modules/core-js/library/modules/_classof.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_for-of": [
+    {
+      "id": 87,
+      "name": "./node_modules/core-js/library/modules/_for-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../lib/router": [
+    {
+      "id": 88,
+      "name": "./node_modules/next/dist/lib/router/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/assertThisInitialized": [
+    {
+      "id": 89,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-pie": [
+    {
+      "id": 136,
+      "name": "./node_modules/core-js/library/modules/_object-pie.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/define-property": [
+    {
+      "id": 137,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/objectSpread": [
+    {
+      "id": 138,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/objectSpread.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_uid": [
+    {
+      "id": 139,
+      "name": "./node_modules/core-js/library/modules/_uid.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/regenerator": [
+    {
+      "id": 140,
+      "name": "./node_modules/@babel/runtime-corejs2/regenerator/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/asyncToGenerator": [
+    {
+      "id": 141,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es6.object.to-string": [
+    {
+      "id": 142,
+      "name": "./node_modules/core-js/library/modules/es6.object.to-string.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./core.get-iterator-method": [
+    {
+      "id": 143,
+      "name": "./node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/array/is-array": [
+    {
+      "id": 144,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../helpers/typeof": [
+    {
+      "id": 145,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "strapi-sdk-javascript/build/main": [
+    {
+      "id": 147,
+      "name": "./node_modules/strapi-sdk-javascript/build/main/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iobject": [
+    {
+      "id": 149,
+      "name": "./node_modules/core-js/library/modules/_iobject.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_defined": [
+    {
+      "id": 150,
+      "name": "./node_modules/core-js/library/modules/_defined.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-gopd": [
+    {
+      "id": 151,
+      "name": "./node_modules/core-js/library/modules/_object-gopd.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-primitive": [
+    {
+      "id": 152,
+      "name": "./node_modules/core-js/library/modules/_to-primitive.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_dom-create": [
+    {
+      "id": 153,
+      "name": "./node_modules/core-js/library/modules/_dom-create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-sap": [
+    {
+      "id": 154,
+      "name": "./node_modules/core-js/library/modules/_object-sap.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_meta": [
+    {
+      "id": 155,
+      "name": "./node_modules/core-js/library/modules/_meta.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_shared": [
+    {
+      "id": 156,
+      "name": "./node_modules/core-js/library/modules/_shared.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/_wks-ext": [
+    {
+      "id": 157,
+      "name": "./node_modules/core-js/library/modules/_wks-ext.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_wks-define": [
+    {
+      "id": 158,
+      "name": "./node_modules/core-js/library/modules/_wks-define.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-integer": [
+    {
+      "id": 159,
+      "name": "./node_modules/core-js/library/modules/_to-integer.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_shared-key": [
+    {
+      "id": 160,
+      "name": "./node_modules/core-js/library/modules/_shared-key.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_enum-bug-keys": [
+    {
+      "id": 161,
+      "name": "./node_modules/core-js/library/modules/_enum-bug-keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-gops": [
+    {
+      "id": 162,
+      "name": "./node_modules/core-js/library/modules/_object-gops.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_is-array": [
+    {
+      "id": 163,
+      "name": "./node_modules/core-js/library/modules/_is-array.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iter-define": [
+    {
+      "id": 164,
+      "name": "./node_modules/core-js/library/modules/_iter-define.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_an-instance": [
+    {
+      "id": 165,
+      "name": "./node_modules/core-js/library/modules/_an-instance.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iter-call": [
+    {
+      "id": 166,
+      "name": "./node_modules/core-js/library/modules/_iter-call.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_is-array-iter": [
+    {
+      "id": 167,
+      "name": "./node_modules/core-js/library/modules/_is-array-iter.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_new-promise-capability": [
+    {
+      "id": 168,
+      "name": "./node_modules/core-js/library/modules/_new-promise-capability.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_redefine-all": [
+    {
+      "id": 169,
+      "name": "./node_modules/core-js/library/modules/_redefine-all.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iter-detect": [
+    {
+      "id": 170,
+      "name": "./node_modules/core-js/library/modules/_iter-detect.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/slicedToArray": [
+    {
+      "id": 171,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": 172,
+      "name": "./node_modules/object-assign/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_validate-collection": [
+    {
+      "id": 173,
+      "name": "./node_modules/core-js/library/modules/_validate-collection.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../lib/EventEmitter": [
+    {
+      "id": 174,
+      "name": "./node_modules/next/dist/lib/EventEmitter.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/object/assign": [
+    {
+      "id": 175,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./defaults": [
+    {
+      "id": 189,
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "lodash.isfunction": [
+    {
+      "id": 201,
+      "name": "./node_modules/lodash.isfunction/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/get-own-property-descriptor": [
+    {
+      "id": 202,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_ie8-dom-define": [
+    {
+      "id": 203,
+      "name": "./node_modules/core-js/library/modules/_ie8-dom-define.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/define-property": [
+    {
+      "id": 204,
+      "name": "./node_modules/core-js/library/fn/object/define-property.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.symbol": [
+    {
+      "id": 205,
+      "name": "./node_modules/core-js/library/modules/es6.symbol.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_redefine": [
+    {
+      "id": 206,
+      "name": "./node_modules/core-js/library/modules/_redefine.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-keys-internal": [
+    {
+      "id": 207,
+      "name": "./node_modules/core-js/library/modules/_object-keys-internal.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_html": [
+    {
+      "id": 208,
+      "name": "./node_modules/core-js/library/modules/_html.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-gopn": [
+    {
+      "id": 209,
+      "name": "./node_modules/core-js/library/modules/_object-gopn.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/keys": [
+    {
+      "id": 210,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "regenerator-runtime": [
+    {
+      "id": 211,
+      "name": "./node_modules/regenerator-runtime/runtime-module.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/promise": [
+    {
+      "id": 212,
+      "name": "./node_modules/core-js/library/fn/promise.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-gpo": [
+    {
+      "id": 213,
+      "name": "./node_modules/core-js/library/modules/_object-gpo.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iter-step": [
+    {
+      "id": 214,
+      "name": "./node_modules/core-js/library/modules/_iter-step.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_species-constructor": [
+    {
+      "id": 215,
+      "name": "./node_modules/core-js/library/modules/_species-constructor.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_task": [
+    {
+      "id": 216,
+      "name": "./node_modules/core-js/library/modules/_task.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_invoke": [
+    {
+      "id": 217,
+      "name": "./node_modules/core-js/library/modules/_invoke.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_perform": [
+    {
+      "id": 218,
+      "name": "./node_modules/core-js/library/modules/_perform.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_promise-resolve": [
+    {
+      "id": 219,
+      "name": "./node_modules/core-js/library/modules/_promise-resolve.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_set-species": [
+    {
+      "id": 220,
+      "name": "./node_modules/core-js/library/modules/_set-species.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/get-iterator": [
+    {
+      "id": 221,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/symbol/iterator": [
+    {
+      "id": 222,
+      "name": "./node_modules/core-js/library/fn/symbol/iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/symbol": [
+    {
+      "id": 223,
+      "name": "./node_modules/core-js/library/fn/symbol/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./setPrototypeOf": [
+    {
+      "id": 224,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/setPrototypeOf.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/set-prototype-of": [
+    {
+      "id": 225,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/set-prototype-of": [
+    {
+      "id": 226,
+      "name": "./node_modules/core-js/library/fn/object/set-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_collection-strong": [
+    {
+      "id": 227,
+      "name": "./node_modules/core-js/library/modules/_collection-strong.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_collection": [
+    {
+      "id": 228,
+      "name": "./node_modules/core-js/library/modules/_collection.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_collection-to-json": [
+    {
+      "id": 229,
+      "name": "./node_modules/core-js/library/modules/_collection-to-json.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_set-collection-of": [
+    {
+      "id": 230,
+      "name": "./node_modules/core-js/library/modules/_set-collection-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_set-collection-from": [
+    {
+      "id": 231,
+      "name": "./node_modules/core-js/library/modules/_set-collection-from.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "url": [
+    {
+      "id": 232,
+      "name": "./node_modules/url/url.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../../../webpack/buildin/module.js": [
+    {
+      "id": 233,
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/assign": [
+    {
+      "id": 234,
+      "name": "./node_modules/core-js/library/fn/object/assign.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/get-prototype-of": [
+    {
+      "id": 235,
+      "name": "./node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/create": [
+    {
+      "id": 236,
+      "name": "./node_modules/core-js/library/fn/object/create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./helpers/bind": [
+    {
+      "id": 237,
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./adapters/xhr": [
+    {
+      "id": 238,
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core/createError": [
+    {
+      "id": 239,
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cancel/isCancel": [
+    {
+      "id": 240,
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cancel/Cancel": [
+    {
+      "id": 241,
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./formats": [
+    {
+      "id": 243,
+      "name": "./node_modules/strapi-sdk-javascript/node_modules/qs/lib/formats.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "classnames": [
+    {
+      "id": 250,
+      "name": "./node_modules/classnames/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "lodash.isobject": [
+    {
+      "id": 251,
+      "name": "./node_modules/lodash.isobject/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "popper.js": [
+    {
+      "id": 252,
+      "name": "./node_modules/popper.js/dist/esm/popper.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "lodash.tonumber": [
+    {
+      "id": 253,
+      "name": "./node_modules/lodash.tonumber/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "jwt-decode": [
+    {
+      "id": 255,
+      "name": "./node_modules/jwt-decode/lib/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./ponyfill.js": [
+    {
+      "id": 257,
+      "name": "./node_modules/symbol-observable/es/ponyfill.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/get-own-property-descriptor": [
+    {
+      "id": 262,
+      "name": "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.get-own-property-descriptor": [
+    {
+      "id": 263,
+      "name": "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.define-property": [
+    {
+      "id": 264,
+      "name": "./node_modules/core-js/library/modules/es6.object.define-property.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/get-own-property-symbols": [
+    {
+      "id": 266,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/get-own-property-symbols": [
+    {
+      "id": 267,
+      "name": "./node_modules/core-js/library/fn/object/get-own-property-symbols.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_enum-keys": [
+    {
+      "id": 268,
+      "name": "./node_modules/core-js/library/modules/_enum-keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_array-includes": [
+    {
+      "id": 269,
+      "name": "./node_modules/core-js/library/modules/_array-includes.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_to-absolute-index": [
+    {
+      "id": 270,
+      "name": "./node_modules/core-js/library/modules/_to-absolute-index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-dps": [
+    {
+      "id": 271,
+      "name": "./node_modules/core-js/library/modules/_object-dps.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-gopn-ext": [
+    {
+      "id": 272,
+      "name": "./node_modules/core-js/library/modules/_object-gopn-ext.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/object/keys": [
+    {
+      "id": 273,
+      "name": "./node_modules/core-js/library/fn/object/keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.keys": [
+    {
+      "id": 274,
+      "name": "./node_modules/core-js/library/modules/es6.object.keys.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./runtime": [
+    {
+      "id": 275,
+      "name": "./node_modules/regenerator-runtime/runtime.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_string-at": [
+    {
+      "id": 276,
+      "name": "./node_modules/core-js/library/modules/_string-at.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_iter-create": [
+    {
+      "id": 277,
+      "name": "./node_modules/core-js/library/modules/_iter-create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./es6.array.iterator": [
+    {
+      "id": 278,
+      "name": "./node_modules/core-js/library/modules/es6.array.iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_add-to-unscopables": [
+    {
+      "id": 279,
+      "name": "./node_modules/core-js/library/modules/_add-to-unscopables.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es6.promise": [
+    {
+      "id": 280,
+      "name": "./node_modules/core-js/library/modules/es6.promise.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_microtask": [
+    {
+      "id": 281,
+      "name": "./node_modules/core-js/library/modules/_microtask.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_user-agent": [
+    {
+      "id": 282,
+      "name": "./node_modules/core-js/library/modules/_user-agent.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es7.promise.finally": [
+    {
+      "id": 283,
+      "name": "./node_modules/core-js/library/modules/es7.promise.finally.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es7.promise.try": [
+    {
+      "id": 284,
+      "name": "./node_modules/core-js/library/modules/es7.promise.try.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./arrayWithHoles": [
+    {
+      "id": 285,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/arrayWithHoles.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/array/is-array": [
+    {
+      "id": 286,
+      "name": "./node_modules/core-js/library/fn/array/is-array.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.array.is-array": [
+    {
+      "id": 287,
+      "name": "./node_modules/core-js/library/modules/es6.array.is-array.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./iterableToArrayLimit": [
+    {
+      "id": 288,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/get-iterator": [
+    {
+      "id": 289,
+      "name": "./node_modules/core-js/library/fn/get-iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/core.get-iterator": [
+    {
+      "id": 290,
+      "name": "./node_modules/core-js/library/modules/core.get-iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./nonIterableRest": [
+    {
+      "id": 291,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/nonIterableRest.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cjs/react.production.min.js": [
+    {
+      "id": 292,
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    },
+    {
+      "id": 396,
+      "name": "./node_modules/next-apollo/node_modules/react/cjs/react.production.min.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cjs/react-dom.production.min.js": [
+    {
+      "id": 293,
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "schedule": [
+    {
+      "id": 294,
+      "name": "./node_modules/schedule/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cjs/schedule.production.min.js": [
+    {
+      "id": 295,
+      "name": "./node_modules/schedule/cjs/schedule.production.min.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/symbol/iterator": [
+    {
+      "id": 297,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/symbol": [
+    {
+      "id": 298,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/symbol.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es7.symbol.async-iterator": [
+    {
+      "id": 299,
+      "name": "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es7.symbol.observable": [
+    {
+      "id": 300,
+      "name": "./node_modules/core-js/library/modules/es7.symbol.observable.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/construct": [
+    {
+      "id": 301,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/construct.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/reflect/construct": [
+    {
+      "id": 302,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/reflect/construct": [
+    {
+      "id": 303,
+      "name": "./node_modules/core-js/library/fn/reflect/construct.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.reflect.construct": [
+    {
+      "id": 304,
+      "name": "./node_modules/core-js/library/modules/es6.reflect.construct.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_bind": [
+    {
+      "id": 305,
+      "name": "./node_modules/core-js/library/modules/_bind.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.set-prototype-of": [
+    {
+      "id": 306,
+      "name": "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_set-proto": [
+    {
+      "id": 307,
+      "name": "./node_modules/core-js/library/modules/_set-proto.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./router": [
+    {
+      "id": 308,
+      "name": "./node_modules/next/dist/lib/router/router.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/set": [
+    {
+      "id": 309,
+      "name": "./node_modules/core-js/library/fn/set.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es6.set": [
+    {
+      "id": 310,
+      "name": "./node_modules/core-js/library/modules/es6.set.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_array-methods": [
+    {
+      "id": 311,
+      "name": "./node_modules/core-js/library/modules/_array-methods.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_array-species-create": [
+    {
+      "id": 312,
+      "name": "./node_modules/core-js/library/modules/_array-species-create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_array-species-constructor": [
+    {
+      "id": 313,
+      "name": "./node_modules/core-js/library/modules/_array-species-constructor.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es7.set.to-json": [
+    {
+      "id": 314,
+      "name": "./node_modules/core-js/library/modules/es7.set.to-json.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_array-from-iterable": [
+    {
+      "id": 315,
+      "name": "./node_modules/core-js/library/modules/_array-from-iterable.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es7.set.of": [
+    {
+      "id": 316,
+      "name": "./node_modules/core-js/library/modules/es7.set.of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../modules/es7.set.from": [
+    {
+      "id": 317,
+      "name": "./node_modules/core-js/library/modules/es7.set.from.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "punycode": [
+    {
+      "id": 318,
+      "name": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./util": [
+    {
+      "id": 319,
+      "name": "./node_modules/url/util.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "querystring": [
+    {
+      "id": 320,
+      "name": "./node_modules/querystring-es3/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./decode": [
+    {
+      "id": 321,
+      "name": "./node_modules/querystring-es3/decode.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./encode": [
+    {
+      "id": 322,
+      "name": "./node_modules/querystring-es3/encode.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../shallow-equals": [
+    {
+      "id": 323,
+      "name": "./node_modules/next/dist/lib/shallow-equals.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../p-queue": [
+    {
+      "id": 324,
+      "name": "./node_modules/next/dist/lib/p-queue.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.assign": [
+    {
+      "id": 325,
+      "name": "./node_modules/core-js/library/modules/es6.object.assign.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./_object-assign": [
+    {
+      "id": 326,
+      "name": "./node_modules/core-js/library/modules/_object-assign.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./with-router": [
+    {
+      "id": 327,
+      "name": "./node_modules/next/dist/lib/router/with-router.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/get-prototype-of": [
+    {
+      "id": 328,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.get-prototype-of": [
+    {
+      "id": 329,
+      "name": "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../core-js/object/create": [
+    {
+      "id": 330,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/object/create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "../../modules/es6.object.create": [
+    {
+      "id": 331,
+      "name": "./node_modules/core-js/library/modules/es6.object.create.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./factoryWithThrowingShims": [
+    {
+      "id": 332,
+      "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": 333,
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./dist/style": [
+    {
+      "id": 346,
+      "name": "./node_modules/styled-jsx/dist/style.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./stylesheet-registry": [
+    {
+      "id": 347,
+      "name": "./node_modules/styled-jsx/dist/stylesheet-registry.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "string-hash": [
+    {
+      "id": 348,
+      "name": "./node_modules/string-hash/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./lib/stylesheet": [
+    {
+      "id": 349,
+      "name": "./node_modules/styled-jsx/dist/lib/stylesheet.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./dist/lib/link": [
+    {
+      "id": 350,
+      "name": "./node_modules/next/dist/lib/link.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "@babel/runtime-corejs2/core-js/json/stringify": [
+    {
+      "id": 351,
+      "name": "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "core-js/library/fn/json/stringify": [
+    {
+      "id": 352,
+      "name": "./node_modules/core-js/library/fn/json/stringify.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./base64_url_decode": [
+    {
+      "id": 353,
+      "name": "./node_modules/jwt-decode/lib/base64_url_decode.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./atob": [
+    {
+      "id": 354,
+      "name": "./node_modules/jwt-decode/lib/atob.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./lib/sdk": [
+    {
+      "id": 355,
+      "name": "./node_modules/strapi-sdk-javascript/build/main/lib/sdk.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "axios": [
+    {
+      "id": 356,
+      "name": "./node_modules/axios/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./lib/axios": [
+    {
+      "id": 357,
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "is-buffer": [
+    {
+      "id": 358,
+      "name": "./node_modules/is-buffer/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./core/Axios": [
+    {
+      "id": 359,
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./helpers/normalizeHeaderName": [
+    {
+      "id": 360,
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../core/settle": [
+    {
+      "id": 361,
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./enhanceError": [
+    {
+      "id": 362,
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/buildURL": [
+    {
+      "id": 363,
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/parseHeaders": [
+    {
+      "id": 364,
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/isURLSameOrigin": [
+    {
+      "id": 365,
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/btoa": [
+    {
+      "id": 366,
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/cookies": [
+    {
+      "id": 367,
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./InterceptorManager": [
+    {
+      "id": 368,
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./dispatchRequest": [
+    {
+      "id": 369,
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./transformData": [
+    {
+      "id": 370,
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/isAbsoluteURL": [
+    {
+      "id": 371,
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../helpers/combineURLs": [
+    {
+      "id": 372,
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./cancel/CancelToken": [
+    {
+      "id": 373,
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./helpers/spread": [
+    {
+      "id": 374,
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "qs": [
+    {
+      "id": 375,
+      "name": "./node_modules/strapi-sdk-javascript/node_modules/qs/lib/index.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./stringify": [
+    {
+      "id": 376,
+      "name": "./node_modules/strapi-sdk-javascript/node_modules/qs/lib/stringify.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./parse": [
+    {
+      "id": 377,
+      "name": "./node_modules/strapi-sdk-javascript/node_modules/qs/lib/parse.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ],
+  "./../../webpack/buildin/harmony-module.js": [
+    {
+      "id": 402,
+      "name": "./node_modules/webpack/buildin/harmony-module.js",
+      "file": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js",
+      "publicPath": "static/chunks/commons.f86f61f9b2ef0c0bc21a.js"
+    }
+  ]
+}
