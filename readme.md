@@ -13,6 +13,9 @@ Technologies Used:
 ## Full tutorial walk through available:
 https://blog.strapi.io/strapi-next-setup/
 
+Demo:
+https://strapi-deliveroo.herokuapp.com/
+
 
 Get ready to develop a **Deliveroo clone, using amazing technologies: [Next.js](https://nextjs.org) ([React](https://reactjs.org)), [GraphQL](https://graphql.org), [Stripe](http://stripe.com/) and [Strapi](https://strapi.io/)**! From signup to order, you are going to let users discover restaurants, dishes and select their happy meal.
 
